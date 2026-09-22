@@ -1,0 +1,644 @@
+/* ==================================================
+   STUDENTS SUPPORT STUDENTS
+   About Page Styles
+================================================== */
+
+/* ---------- Who We Are ---------- */
+
+.about-introduction {
+    position: relative;
+    overflow: hidden;
+    background: var(--white);
+}
+
+.about-introduction::after {
+    position: absolute;
+    top: 60px;
+    right: -120px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: var(--light-orange);
+    content: "";
+    opacity: 0.55;
+}
+
+.about-introduction-content {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 85px;
+}
+
+.about-introduction-text::before {
+    display: block;
+    width: 72px;
+    height: 6px;
+    margin-bottom: 24px;
+    border-radius: var(--radius-round);
+    background: var(--orange);
+    content: "";
+}
+
+.about-introduction-text h2 {
+    margin-bottom: 24px;
+}
+
+.about-introduction-text p:not(.section-label) {
+    margin-bottom: 18px;
+    font-size: 1.06rem;
+}
+
+.about-introduction-image {
+    position: relative;
+    padding: 18px 18px 0 0;
+}
+
+.about-introduction-image::before {
+    position: absolute;
+    top: -20px;
+    right: -10px;
+    width: 82%;
+    height: 82%;
+    border-radius: var(--radius-large);
+    background: var(--orange);
+    content: "";
+}
+
+.about-introduction-image::after {
+    position: absolute;
+    bottom: -28px;
+    left: -30px;
+    z-index: -1;
+    width: 150px;
+    height: 150px;
+    border-radius: var(--radius);
+    background: var(--light-blue);
+    content: "";
+    transform: rotate(-10deg);
+}
+
+.about-introduction-image img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 500px;
+    border: 10px solid var(--white);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-large);
+    object-fit: cover;
+}
+
+/* ---------- Mission and Vision ---------- */
+
+.mission-vision {
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(
+        135deg,
+        var(--light-blue),
+        #f8fbff
+    );
+}
+
+.mission-vision::before {
+    position: absolute;
+    top: -120px;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    border: 80px solid rgba(23, 59, 143, 0.04);
+    border-radius: 50%;
+    content: "";
+}
+
+.mission-vision-grid {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 32px;
+}
+
+.mission-vision-card {
+    position: relative;
+    min-height: 440px;
+    overflow: hidden;
+    padding: 48px;
+    border: 1px solid rgba(23, 59, 143, 0.1);
+    border-radius: var(--radius-large);
+    background: var(--white);
+    box-shadow: var(--shadow);
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.mission-vision-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-large);
+}
+
+.mission-vision-card::after {
+    position: absolute;
+    right: -50px;
+    bottom: -50px;
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    background: var(--light-orange);
+    content: "";
+    opacity: 0.7;
+}
+
+.mission-vision-card h2,
+.mission-vision-card p {
+    position: relative;
+    z-index: 1;
+}
+
+.mission-vision-card h2 {
+    margin-bottom: 24px;
+    font-size: clamp(2rem, 3vw, 2.8rem);
+}
+
+.mission-vision-card p:not(.section-label) {
+    margin-bottom: 18px;
+    font-size: 1.04rem;
+}
+
+.vision-card {
+    border-color: transparent;
+    background:
+        radial-gradient(
+            circle at 90% 10%,
+            rgba(247, 147, 30, 0.22),
+            transparent 30%
+        ),
+        linear-gradient(
+            145deg,
+            var(--dark-blue),
+            var(--blue)
+        );
+}
+
+.vision-card::after {
+    background: rgba(255, 255, 255, 0.06);
+}
+
+.vision-card h2 {
+    color: var(--white);
+}
+
+.vision-card p:not(.section-label) {
+    color: #dce6ff;
+}
+
+.vision-card .section-label {
+    color: #ffc878;
+}
+
+/* ---------- Peer Support ---------- */
+
+.peer-support {
+    position: relative;
+    overflow: hidden;
+    background: var(--cream);
+}
+
+.peer-support::before {
+    position: absolute;
+    right: -130px;
+    bottom: -130px;
+    width: 330px;
+    height: 330px;
+    border: 48px solid rgba(247, 147, 30, 0.08);
+    border-radius: 50%;
+    content: "";
+}
+
+.peer-support-content {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    grid-template-columns: 0.95fr 1.05fr;
+    align-items: center;
+    gap: 85px;
+}
+
+.peer-support-image {
+    position: relative;
+}
+
+.peer-support-image::before {
+    position: absolute;
+    top: -28px;
+    left: -28px;
+    width: 72%;
+    height: 72%;
+    border-radius: var(--radius-large);
+    background: var(--blue);
+    content: "";
+}
+
+.peer-support-image::after {
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: var(--orange);
+    content: "";
+}
+
+.peer-support-image img {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    min-height: 500px;
+    border: 10px solid var(--white);
+    border-radius: var(--radius-large);
+    box-shadow: var(--shadow-large);
+    object-fit: cover;
+}
+
+.peer-support-text h2 {
+    margin-bottom: 24px;
+}
+
+.peer-support-text p:not(.section-label) {
+    margin-bottom: 18px;
+    font-size: 1.06rem;
+}
+
+/* ---------- Values Honeycomb ---------- */
+
+.values {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(247, 147, 30, 0.12),
+            transparent 24%
+        ),
+        radial-gradient(
+            circle at 90% 75%,
+            rgba(23, 59, 143, 0.12),
+            transparent 26%
+        ),
+        linear-gradient(
+            180deg,
+            var(--white),
+            var(--cream)
+        );
+}
+
+.values::before {
+    position: absolute;
+    top: 110px;
+    left: 8%;
+    width: 90px;
+    height: 90px;
+    border: 18px solid rgba(23, 59, 143, 0.07);
+    border-radius: 50%;
+    content: "";
+}
+
+.values::after {
+    position: absolute;
+    right: 7%;
+    bottom: 90px;
+    width: 135px;
+    height: 135px;
+    border: 24px solid rgba(247, 147, 30, 0.08);
+    border-radius: 50%;
+    content: "";
+}
+
+.values-heading {
+    position: relative;
+    z-index: 2;
+    max-width: 780px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+.values-heading::after {
+    display: block;
+    width: 80px;
+    height: 6px;
+    margin: 28px auto 0;
+    border-radius: var(--radius-round);
+    background: var(--orange);
+    content: "";
+}
+
+.values-honeycomb {
+    position: relative;
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(4, 250px);
+    grid-template-rows: repeat(3, 220px);
+    justify-content: center;
+    align-items: center;
+    column-gap: 18px;
+    row-gap: 8px;
+    padding: 45px 0;
+}
+
+.hexagon {
+    display: flex;
+    width: 250px;
+    height: 285px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 34px;
+    background: linear-gradient(
+        145deg,
+        var(--white),
+        var(--light-blue)
+    );
+    clip-path: polygon(
+        25% 6.7%,
+        75% 6.7%,
+        100% 50%,
+        75% 93.3%,
+        25% 93.3%,
+        0% 50%
+    );
+    filter: drop-shadow(
+        0 18px 20px rgba(15, 40, 102, 0.15)
+    );
+    transition:
+        transform 0.3s ease,
+        filter 0.3s ease;
+}
+
+.hexagon:nth-child(even) {
+    background: linear-gradient(
+        145deg,
+        var(--white),
+        var(--light-orange)
+    );
+}
+
+.hexagon:hover {
+    z-index: 10;
+    transform: translateY(-12px) scale(1.035);
+    filter: drop-shadow(
+        0 26px 28px rgba(15, 40, 102, 0.22)
+    );
+}
+
+.hexagon-content {
+    max-width: 190px;
+    text-align: center;
+}
+
+.hexagon-icon {
+    display: grid;
+    width: 52px;
+    height: 52px;
+    margin: 0 auto 16px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--light-orange);
+    color: var(--dark-orange);
+    font-family: var(--heading-font);
+    font-size: 1rem;
+    font-weight: 800;
+    transition: transform var(--transition);
+}
+
+.hexagon:nth-child(even) .hexagon-icon {
+    background: var(--light-blue);
+    color: var(--blue);
+}
+
+.hexagon:hover .hexagon-icon {
+    transform: scale(1.12) rotate(4deg);
+}
+
+.hexagon h3 {
+    margin-bottom: 10px;
+    font-size: 1.14rem;
+}
+
+.hexagon p {
+    font-size: 0.82rem;
+    line-height: 1.48;
+}
+
+.value-leadership {
+    grid-column: 2 / 4;
+    grid-row: 1;
+    justify-self: center;
+}
+
+.value-accessibility {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.value-encouragement {
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.value-community {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.value-inclusion {
+    grid-column: 4;
+    grid-row: 2;
+}
+
+.value-trust {
+    grid-column: 2 / 4;
+    grid-row: 3;
+    justify-self: center;
+}
+
+/* ---------- Who We Support ---------- */
+
+.about-audience {
+    position: relative;
+    overflow: hidden;
+    background: var(--light-blue);
+}
+
+.about-audience::after {
+    position: absolute;
+    top: -120px;
+    right: -100px;
+    width: 320px;
+    height: 320px;
+    border: 65px solid rgba(23, 59, 143, 0.05);
+    border-radius: 50%;
+    content: "";
+}
+
+.about-audience .section-heading,
+.about-audience-grid {
+    position: relative;
+    z-index: 1;
+}
+
+.about-audience-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 28px;
+}
+
+.audience-card {
+    position: relative;
+    min-height: 320px;
+    overflow: hidden;
+    padding: 36px 32px;
+    border: 1px solid rgba(23, 59, 143, 0.1);
+    border-radius: var(--radius-large);
+    background: var(--white);
+    box-shadow: var(--shadow);
+    transition:
+        transform var(--transition),
+        box-shadow var(--transition);
+}
+
+.audience-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-large);
+}
+
+.audience-card::after {
+    position: absolute;
+    right: -42px;
+    bottom: -42px;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background: var(--light-orange);
+    content: "";
+}
+
+.audience-card:nth-child(2)::after {
+    background: var(--light-blue);
+}
+
+.audience-label {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    margin-bottom: 24px;
+    padding: 8px 16px;
+    border-radius: var(--radius-round);
+    background: var(--light-orange);
+    color: var(--dark-orange);
+    font-size: 0.78rem;
+    font-weight: 900;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.audience-card:nth-child(2) .audience-label {
+    background: var(--light-blue);
+    color: var(--blue);
+}
+
+.audience-card h3,
+.audience-card p {
+    position: relative;
+    z-index: 1;
+}
+
+.audience-card h3 {
+    margin-bottom: 16px;
+    font-size: 1.45rem;
+}
+
+/* ---------- Responsive ---------- */
+
+@media screen and (max-width: 1150px) {
+    .values-honeycomb {
+        grid-template-columns: repeat(2, 270px);
+        grid-template-rows: auto;
+        gap: 24px;
+    }
+
+    .hexagon {
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about-introduction-content,
+    .peer-support-content,
+    .mission-vision-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about-introduction-content,
+    .peer-support-content {
+        gap: 60px;
+    }
+
+    .mission-vision-card {
+        min-height: auto;
+    }
+
+    .about-introduction-image,
+    .peer-support-image {
+        max-width: 720px;
+    }
+
+    .about-audience-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .audience-card {
+        min-height: auto;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .mission-vision-card {
+        padding: 36px 26px;
+    }
+
+    .about-introduction-image img,
+    .peer-support-image img {
+        min-height: 350px;
+    }
+
+    .values-heading {
+        margin-bottom: 55px;
+    }
+
+    .values-honeycomb {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .hexagon {
+        width: 285px;
+        height: 325px;
+        grid-column: auto;
+        grid-row: auto;
+        justify-self: center;
+    }
+
+    .hexagon-content {
+        max-width: 210px;
+    }
+
+    .hexagon p {
+        font-size: 0.88rem;
+    }
+}
