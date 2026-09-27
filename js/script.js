@@ -1,182 +1,113 @@
-/* ==================================================
-   STUDENTS SUPPORT STUDENTS
-   Global JavaScript
-================================================== */
+/* STUDENTS SUPPORT STUDENTS — Global JavaScript */
+const menuButton = document.querySelector('.menu-button');
+const navLinks = document.querySelector('.nav-links');
+const dropdowns = [...document.querySelectorAll('.dropdown')];
 
-
-/* ---------- Mobile Navigation ---------- */
-
-const menuButton = document.querySelector(".menu-button");
-const navLinks = document.querySelector(".nav-links");
+function closeDropdowns(except = null) {
+  dropdowns.forEach((dropdown) => {
+    if (dropdown === except) return;
+    dropdown.classList.remove('open');
+    const toggle = dropdown.querySelector('.dropdown-toggle');
+    if (toggle) toggle.setAttribute('aria-expanded', 'false');
+  });
+}
 
 function closeMenu() {
-    if (!menuButton || !navLinks) return;
-
-    navLinks.classList.remove("nav-open");
-    menuButton.classList.remove("menu-open");
-
-    menuButton.setAttribute("aria-expanded", "false");
-    menuButton.setAttribute("aria-label", "Open navigation menu");
+  if (!menuButton || !navLinks) return;
+  navLinks.classList.remove('nav-open');
+  menuButton.classList.remove('menu-open');
+  menuButton.setAttribute('aria-expanded', 'false');
+  menuButton.setAttribute('aria-label', 'Open navigation menu');
+  closeDropdowns();
 }
 
 if (menuButton && navLinks) {
-    menuButton.addEventListener("click", () => {
-        const menuIsOpen = navLinks.classList.toggle("nav-open");
-
-        menuButton.classList.toggle("menu-open", menuIsOpen);
-        menuButton.setAttribute("aria-expanded", menuIsOpen.toString());
-        menuButton.setAttribute(
-            "aria-label",
-            menuIsOpen
-                ? "Close navigation menu"
-                : "Open navigation menu"
-        );
-    });
+  menuButton.addEventListener('click', () => {
+    const isOpen = navLinks.classList.toggle('nav-open');
+    menuButton.classList.toggle('menu-open', isOpen);
+    menuButton.setAttribute('aria-expanded', String(isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+  });
 }
 
+dropdowns.forEach((dropdown) => {
+  const toggle = dropdown.querySelector('.dropdown-toggle');
+  if (!toggle) return;
 
-/* ---------- Close Mobile Menu ---------- */
+  toggle.addEventListener('click', (event) => {
+    event.stopPropagation();
+    const willOpen = !dropdown.classList.contains('open');
+    closeDropdowns(dropdown);
+    dropdown.classList.toggle('open', willOpen);
+    toggle.setAttribute('aria-expanded', String(willOpen));
+  });
 
-document.querySelectorAll(".nav-links a").forEach((link) => {
-    link.addEventListener("click", closeMenu);
+  dropdown.addEventListener('mouseenter', () => {
+    if (window.innerWidth <= 900) return;
+    closeDropdowns(dropdown);
+    dropdown.classList.add('open');
+    toggle.setAttribute('aria-expanded', 'true');
+  });
+
+  dropdown.addEventListener('mouseleave', () => {
+    if (window.innerWidth <= 900) return;
+    dropdown.classList.remove('open');
+    toggle.setAttribute('aria-expanded', 'false');
+  });
 });
 
-document.addEventListener("click", (event) => {
-    if (!menuButton || !navLinks) return;
+document.querySelectorAll('.nav-links a').forEach((link) => link.addEventListener('click', closeMenu));
 
-    const clickedButton = menuButton.contains(event.target);
-    const clickedMenu = navLinks.contains(event.target);
-
-    if (!clickedButton && !clickedMenu) {
-        closeMenu();
-    }
+document.addEventListener('click', (event) => {
+  const insideNav = navLinks && navLinks.contains(event.target);
+  const clickedButton = menuButton && menuButton.contains(event.target);
+  if (!insideNav && !clickedButton) closeMenu();
 });
 
-document.addEventListener("keydown", (event) => {
-    if (event.key === "Escape") {
-        closeMenu();
-
-        if (menuButton) {
-            menuButton.focus();
-        }
-    }
+document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape') {
+    closeMenu();
+    if (menuButton && window.innerWidth <= 900) menuButton.focus();
+  }
 });
 
-
-/* ---------- Header Shadow ---------- */
-
-const header = document.querySelector(".site-header");
-
-function updateHeader() {
-    if (!header) return;
-
-    header.classList.toggle(
-        "header-scrolled",
-        window.scrollY > 20
-    );
-}
-
-window.addEventListener("scroll", updateHeader);
+const header = document.querySelector('.site-header');
+function updateHeader() { if (header) header.classList.toggle('header-scrolled', window.scrollY > 20); }
+window.addEventListener('scroll', updateHeader, { passive:true });
 updateHeader();
 
-
-/* ---------- Active Navigation Link ---------- */
-
-const currentPage =
-    window.location.pathname.split("/").pop() || "index.html";
-
-document.querySelectorAll(".nav-links a").forEach((link) => {
-    const linkPage = link.getAttribute("href");
-
-    if (linkPage === currentPage) {
-        link.classList.add("active");
-    } else {
-        link.classList.remove("active");
-    }
+const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+document.querySelectorAll('.nav-links a').forEach((link) => {
+  const linkPage = (link.getAttribute('href') || '').split('#')[0];
+  link.classList.toggle('active', linkPage === currentPage);
 });
 
-
-/* ---------- Scroll Reveal ---------- */
-
-const reduceMotion = window.matchMedia(
-    "(prefers-reduced-motion: reduce)"
-).matches;
-
-const revealElements = document.querySelectorAll(
-    `
-    .service-card,
-    .step-card,
-    .support-card,
-    .reason,
-    .mission-vision-card,
-    .hexagon,
-    .audience-card,
-    .mentor-card
-    `
-);
-
-if (!reduceMotion && "IntersectionObserver" in window) {
-    revealElements.forEach((element) => {
-        element.classList.add("reveal");
+const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+const revealElements = document.querySelectorAll('.path-card,.service-card,.step-card,.support-card,.reason,.mission-vision-card,.hexagon,.audience-card,.mentor-card,.topic-pill');
+if (!reduceMotion && 'IntersectionObserver' in window) {
+  revealElements.forEach((el) => el.classList.add('reveal'));
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach((entry) => {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add('visible');
+      obs.unobserve(entry.target);
     });
-
-    const revealObserver = new IntersectionObserver(
-        (entries, observer) => {
-            entries.forEach((entry) => {
-                if (!entry.isIntersecting) return;
-
-                entry.target.classList.add("visible");
-                observer.unobserve(entry.target);
-            });
-        },
-        {
-            threshold: 0.12
-        }
-    );
-
-    revealElements.forEach((element) => {
-        revealObserver.observe(element);
-    });
+  }, { threshold:.1 });
+  revealElements.forEach((el) => observer.observe(el));
 } else {
-    revealElements.forEach((element) => {
-        element.classList.add("visible");
-    });
+  revealElements.forEach((el) => el.classList.add('visible'));
 }
 
-
-/* ---------- Scroll-to-Top Button ---------- */
-
-const scrollButton = document.createElement("button");
-
-scrollButton.className = "scroll-top";
-scrollButton.type = "button";
-scrollButton.innerHTML = "↑";
-scrollButton.setAttribute("aria-label", "Scroll to top");
-
+const scrollButton = document.createElement('button');
+scrollButton.className = 'scroll-top';
+scrollButton.type = 'button';
+scrollButton.innerHTML = '↑';
+scrollButton.setAttribute('aria-label', 'Scroll to top');
 document.body.appendChild(scrollButton);
-
-function updateScrollButton() {
-    scrollButton.classList.toggle(
-        "scroll-top-visible",
-        window.scrollY > 500
-    );
-}
-
-window.addEventListener("scroll", updateScrollButton);
+function updateScrollButton() { scrollButton.classList.toggle('scroll-top-visible', window.scrollY > 500); }
+window.addEventListener('scroll', updateScrollButton, { passive:true });
 updateScrollButton();
+scrollButton.addEventListener('click', () => window.scrollTo({ top:0, behavior:reduceMotion ? 'auto' : 'smooth' }));
 
-scrollButton.addEventListener("click", () => {
-    window.scrollTo({
-        top: 0,
-        behavior: reduceMotion ? "auto" : "smooth"
-    });
-});
-
-
-/* ---------- Current Footer Year ---------- */
-
-const currentYear = document.querySelector("#current-year");
-
-if (currentYear) {
-    currentYear.textContent = new Date().getFullYear();
-}
+const currentYear = document.querySelector('#current-year');
+if (currentYear) currentYear.textContent = new Date().getFullYear();
