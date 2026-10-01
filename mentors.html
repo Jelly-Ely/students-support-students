@@ -13,29 +13,62 @@
 
 <!-- HEADER -->
 <header class="site-header">
-  <nav class="navbar container">
+  <div class="container navbar">
     <a href="index.html" class="logo">
       <img src="images/logo.png" alt="Students Support Students logo">
       <span>Students Support Students</span>
     </a>
 
+    <button class="menu-button" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
+
       <li class="nav-dropdown">
-        <a href="about.html" class="dropdown-toggle">Who We Are <span aria-hidden="true">⌄</span></a>
+        <button class="dropdown-toggle active">Who We Are</button>
         <ul class="dropdown-menu">
           <li><a href="about.html#mission">Our Mission</a></li>
-          <li><a href="mentors.html">Meet Our Mentors</a></li>
+          <li><a href="mentors.html" class="active">Meet Our Mentors</a></li>
           <li><a href="executive-board.html">Executive Board</a></li>
         </ul>
       </li>
-      <li><a href="how-we-help.html">How We Help</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">How We Help</button>
+        <ul class="dropdown-menu">
+          <li><a href="how-we-help.html#mentorship">Mentorship</a></li>
+          <li><a href="how-we-help.html#college-guidance">College Guidance</a></li>
+          <li><a href="how-we-help.html#academic-support">Academic Support</a></li>
+          <li><a href="how-we-help.html#career-support">Career Support</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Resources</button>
+        <ul class="dropdown-menu">
+          <li><a href="resources.html#student-guides">Student Guides</a></li>
+          <li><a href="resources.html#financial-aid">Financial Aid</a></li>
+          <li><a href="resources.html#scholarships">Scholarships</a></li>
+          <li><a href="resources.html#transfer-support">Transfer Support</a></li>
+          <li><a href="resources.html#undocumented-students">Undocumented Students</a></li>
+          <li><a href="resources.html">View All Resources</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Get Involved</button>
+        <ul class="dropdown-menu">
+          <li><a href="get-involved.html#become-a-mentor">Become a Mentor</a></li>
+          <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+          <li><a href="get-involved.html#partner">Partner With Us</a></li>
+        </ul>
+      </li>
     </ul>
 
     <a href="contact.html" class="nav-button">Contact Us</a>
-  </nav>
+  </div>
 </header>
 
 <main>
@@ -52,6 +85,7 @@
 <!-- INTRODUCTION -->
 <section class="team-introduction section">
   <div class="team-introduction-content container">
+
     <div class="team-introduction-text">
       <p class="section-label">Student Mentors</p>
       <h2>Find someone who understands your journey.</h2>
@@ -63,12 +97,14 @@
       <p>You don't have to choose on your own. Tell us what you need help with and we'll help connect you with a mentor who matches your questions and goals.</p>
       <a href="contact.html" class="button button-primary">Contact Our Team</a>
     </div>
+
   </div>
 </section>
 
 <!-- MENTORS -->
 <section class="team-section section">
   <div class="container">
+
     <div class="section-heading">
       <p class="section-label">Our Community</p>
       <h2>Meet our student mentors.</h2>
@@ -78,157 +114,252 @@
     <div class="mentor-grid">
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/DercelyOliva.png" alt="Dercely Oliva"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/DercelyOliva.png" alt="Dercely Oliva">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">San Francisco State University</p>
           <h2>Dercely Oliva</h2>
           <p class="mentor-major">Criminal Justice Studies</p>
           <p>Dercely is a first-generation transfer student who attended San Joaquin Delta College before transferring to San Francisco State University. She hopes to become a crime scene technician and enjoys editing videos, gaming, and helping others.</p>
-          <div class="mentor-topics"><span>Transfer Students</span><span>FAFSA</span><span>CSU Applications</span><span>Dorm Life</span></div>
+          <div class="mentor-topics">
+            <span>Transfer Students</span>
+            <span>FAFSA</span>
+            <span>CSU Applications</span>
+            <span>Dorm Life</span>
+          </div>
           <a href="mailto:doliva1019@gmail.com" class="mentor-button">Contact Dercely</a>
         </div>
       </article>
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/ElianaHernandez.png" alt="Eliana Hernandez"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/ElianaHernandez.png" alt="Eliana Hernandez">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">San Joaquin Delta College</p>
           <h2>Eliana Hernandez</h2>
           <p class="mentor-major">Chemistry</p>
           <p>Eliana is a first-generation Chemistry student involved in Delta College's MESA program and American Chemical Society Club. She is passionate about chemistry and hopes to eventually work in a laboratory.</p>
-          <div class="mentor-topics"><span>First-Generation</span><span>STEM</span><span>Community College</span><span>MESA</span></div>
+          <div class="mentor-topics">
+            <span>First-Generation</span>
+            <span>STEM</span>
+            <span>Community College</span>
+            <span>MESA</span>
+          </div>
           <a href="mailto:ehernandez074@mustangs.deltacollege.edu" class="mentor-button">Contact Eliana</a>
         </div>
       </article>
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/LauraMaldonado.png" alt="Laura Maldonado"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/LauraMaldonado.png" alt="Laura Maldonado">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">University of the Pacific</p>
           <h2>Laura Maldonado</h2>
           <p class="mentor-major">Accounting</p>
           <p>Laura is a first-generation and transfer student who recently transferred from community college to the University of the Pacific. She hopes to help other first-generation students discover academic resources and opportunities.</p>
-          <div class="mentor-topics"><span>First-Generation</span><span>Transfer Students</span><span>Community College</span><span>University Transition</span></div>
+          <div class="mentor-topics">
+            <span>First-Generation</span>
+            <span>Transfer Students</span>
+            <span>Community College</span>
+            <span>University Transition</span>
+          </div>
           <a href="mailto:lauranmaldonadom@gmail.com" class="mentor-button">Contact Laura</a>
         </div>
       </article>
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/MisbahKhan.png" alt="Misbah Khan"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/MisbahKhan.png" alt="Misbah Khan">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">University of the Pacific</p>
           <h2>Misbah Khan</h2>
           <p class="mentor-major">Computer Science</p>
           <p>Misbah studies Computer Science and hopes to pursue graduate study in astrophysics. Her college experience has taught her the importance of perseverance, asking for help, and believing in yourself through uncertainty.</p>
-          <div class="mentor-topics"><span>Computer Science</span><span>STEM</span><span>College Life</span><span>Academic Confidence</span></div>
+          <div class="mentor-topics">
+            <span>Computer Science</span>
+            <span>STEM</span>
+            <span>College Life</span>
+            <span>Academic Confidence</span>
+          </div>
           <a href="mailto:misbahkhaan7@gmail.com" class="mentor-button">Contact Misbah</a>
         </div>
       </article>
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/DaisyVillalobos.png" alt="Daisy Guadalupe Villalobos"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/DaisyVillalobos.png" alt="Daisy Guadalupe Villalobos">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">California State University, Sacramento</p>
           <h2>Daisy Guadalupe Villalobos</h2>
           <p class="mentor-major">Health Science</p>
           <p>Daisy is a first-generation Health Science student at Sacramento State who enjoys learning about different perspectives, reading, and music. She's especially happy to answer questions from students interested in Sacramento State.</p>
-          <div class="mentor-topics"><span>First-Generation</span><span>Health Science</span><span>Sacramento State</span><span>CSU Experience</span></div>
+          <div class="mentor-topics">
+            <span>First-Generation</span>
+            <span>Health Science</span>
+            <span>Sacramento State</span>
+            <span>CSU Experience</span>
+          </div>
           <a href="mailto:villalobosdaisy719@gmail.com" class="mentor-button">Contact Daisy</a>
         </div>
       </article>
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/MichaelAnthonyLazono.png" alt="Michael Anthony Lazono"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/MichaelAnthonyLazono.png" alt="Michael Anthony Lazono">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">San Joaquin Delta College</p>
           <h2>Michael Anthony Lazono</h2>
           <p class="mentor-major">Psychology</p>
           <p>Michael is passionate about helping students understand that their past does not define their future. After discovering a passion for mentoring through education, he began pursuing psychology and continues working toward transferring to a university.</p>
-          <div class="mentor-topics"><span>Community College</span><span>Transfer Planning</span><span>Psychology</span><span>Motivation</span></div>
+          <div class="mentor-topics">
+            <span>Community College</span>
+            <span>Transfer Planning</span>
+            <span>Psychology</span>
+            <span>Motivation</span>
+          </div>
           <a href="mailto:lazonoant123@gmail.com" class="mentor-button">Contact Michael</a>
         </div>
       </article>
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/JuliannaLazono.png" alt="Julianna Lazono"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/JuliannaLazono.png" alt="Julianna Lazono">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">California State University, Chico</p>
           <h2>Julianna Lazono</h2>
           <p class="mentor-major">Public Administration</p>
           <p>Julianna transferred from San Joaquin Delta College to Chico State after discovering a passion for public service and advocacy. She previously participated in Puente, co-founded La Raza Club, and served as Inter-Club Council President.</p>
-          <div class="mentor-topics"><span>First-Generation</span><span>Transfer Students</span><span>Student Leadership</span><span>Public Service</span></div>
+          <div class="mentor-topics">
+            <span>First-Generation</span>
+            <span>Transfer Students</span>
+            <span>Student Leadership</span>
+            <span>Public Service</span>
+          </div>
           <a href="mailto:lazono.julianna21@gmail.com" class="mentor-button">Contact Julianna</a>
         </div>
       </article>
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/DanielaRomoVargas.png" alt="Daniela Romo-Vargas"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/DanielaRomoVargas.png" alt="Daniela Romo-Vargas">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">University of California, Berkeley</p>
           <h2>Daniela Romo-Vargas</h2>
           <p class="mentor-major">Political Science & Chicanx/Latinx Studies · Public Policy Minor</p>
           <p>Daniela transferred from San Joaquin Delta College to UC Berkeley after initially graduating high school without plans to attend college. Her experiences shaped her passion for helping students find financial aid, paid opportunities, campus involvement, and pathways forward.</p>
-          <div class="mentor-topics"><span>Transfer Students</span><span>UC Berkeley</span><span>Financial Aid</span><span>Paid Opportunities</span><span>Student Involvement</span></div>
+          <div class="mentor-topics">
+            <span>Transfer Students</span>
+            <span>UC Berkeley</span>
+            <span>Financial Aid</span>
+            <span>Paid Opportunities</span>
+            <span>Student Involvement</span>
+          </div>
           <a href="mailto:daniela_romo@berkeley.edu" class="mentor-button">Contact Daniela</a>
         </div>
       </article>
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/JavelyTejedaBenitez.png" alt="Javely Betzabeth Tejeda Benitez"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/JavelyTejedaBenitez.png" alt="Javely Betzabeth Tejeda Benitez">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">Santa Clara University</p>
           <h2>Javely Betzabeth Tejeda Benitez</h2>
           <p class="mentor-major">Computer Science & Engineering</p>
           <p>Javely is a Computer Science and Engineering student passionate about educational technology, accessibility, research, and community service. She enjoys helping students interested in Santa Clara University, technology, research, and navigating university resources.</p>
-          <div class="mentor-topics"><span>Computer Science</span><span>STEM</span><span>Santa Clara University</span><span>Research</span><span>Educational Technology</span></div>
+          <div class="mentor-topics">
+            <span>Computer Science</span>
+            <span>STEM</span>
+            <span>Santa Clara University</span>
+            <span>Research</span>
+            <span>Educational Technology</span>
+          </div>
           <a href="mailto:javelytejeda@gmail.com" class="mentor-button">Contact Javely</a>
         </div>
       </article>
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/AngelinaCruzOchoa.png" alt="Angelina Mariee Cruz-Ochoa"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/AngelinaCruzOchoa.png" alt="Angelina Mariee Cruz-Ochoa">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">San Joaquin Delta College</p>
           <h2>Angelina Mariee Cruz-Ochoa</h2>
           <p class="mentor-major">Business Administration</p>
           <p>Angelina, who goes by Angie, is a Business Administration student passionate about advocacy, leadership, and expanding opportunities for students.</p>
-          <div class="mentor-topics"><span>Business</span><span>Community College</span><span>Leadership</span><span>Student Opportunities</span></div>
+          <div class="mentor-topics">
+            <span>Business</span>
+            <span>Community College</span>
+            <span>Leadership</span>
+            <span>Student Opportunities</span>
+          </div>
           <a href="mailto:amarieeochoa@gmail.com" class="mentor-button">Contact Angie</a>
         </div>
       </article>
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/JaidenSkyArguelles.png" alt="Jaiden Sky Arguelles"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/JaidenSkyArguelles.png" alt="Jaiden Sky Arguelles">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">San Joaquin Delta College</p>
           <h2>Jaiden Sky Arguelles</h2>
           <p class="mentor-major">Biology · Pre-Med</p>
           <p>Jaiden is a first-generation pre-med student preparing to transfer from San Joaquin Delta College to a CSU. Alongside community leadership and volunteering, Jaiden is a licensed phlebotomist and student researcher.</p>
-          <div class="mentor-topics"><span>First-Generation</span><span>Pre-Med</span><span>Research</span><span>Transfer Planning</span><span>CSU</span></div>
+          <div class="mentor-topics">
+            <span>First-Generation</span>
+            <span>Pre-Med</span>
+            <span>Research</span>
+            <span>Transfer Planning</span>
+            <span>CSU</span>
+          </div>
           <a href="mailto:JaidenSky22@gmail.com" class="mentor-button">Contact Jaiden</a>
         </div>
       </article>
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/PedroIbarraMejia.png" alt="Pedro Ibarra Mejia"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/PedroIbarraMejia.png" alt="Pedro Ibarra Mejia">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">University of the Pacific</p>
           <h2>Pedro Ibarra Mejia</h2>
           <p class="mentor-major">Political Science & Spanish</p>
           <p>Pedro is a first-generation student passionate about public service, leadership, immigration, and supporting his community. He is involved in student government, campus leadership, and undergraduate research and hopes to pursue immigration law.</p>
-          <div class="mentor-topics"><span>First-Generation</span><span>Political Science</span><span>Leadership</span><span>Research</span><span>Pre-Law</span></div>
+          <div class="mentor-topics">
+            <span>First-Generation</span>
+            <span>Political Science</span>
+            <span>Leadership</span>
+            <span>Research</span>
+            <span>Pre-Law</span>
+          </div>
           <a href="mailto:pedroibarra726@gmail.com" class="mentor-button">Contact Pedro</a>
         </div>
       </article>
 
       <article class="mentor-card">
-        <div class="mentor-photo"><img src="images/mentors/HildaCabelloGarcia.png" alt="Hilda Cabello-Garcia"></div>
+        <div class="mentor-photo">
+          <img src="images/mentors/HildaCabelloGarcia.png" alt="Hilda Cabello-Garcia">
+        </div>
         <div class="mentor-card-content">
           <p class="mentor-school">University of California, Davis</p>
           <h2>Hilda Cabello-Garcia</h2>
           <p class="mentor-major">Political Science – Public Service</p>
           <p>Hilda is a third-year UC Davis student passionate about advocacy, policy, public service, and helping students recognize the power of their voices.</p>
-          <div class="mentor-topics"><span>UC Davis</span><span>Political Science</span><span>Public Service</span><span>Advocacy</span></div>
+          <div class="mentor-topics">
+            <span>UC Davis</span>
+            <span>Political Science</span>
+            <span>Public Service</span>
+            <span>Advocacy</span>
+          </div>
           <a href="mailto:hildacabellogarcia@gmail.com" class="mentor-button">Contact Hilda</a>
         </div>
       </article>
