@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Learn about Students Support Students, our mission, vision, values, mentors, and student leadership.">
+  <meta name="description" content="Learn about Students Support Students, our story, mission, vision, values, mentors, and student leadership.">
   <title>Who We Are | Students Support Students</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/about.css">
@@ -21,14 +21,16 @@
 
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
+
       <li class="nav-dropdown">
-        <a href="about.html" class="dropdown-toggle">Who We Are <span aria-hidden="true">⌄</span></a>
+        <a href="about.html" class="dropdown-toggle active">Who We Are <span aria-hidden="true">⌄</span></a>
         <ul class="dropdown-menu">
           <li><a href="about.html#mission">Our Mission</a></li>
           <li><a href="mentors.html">Meet Our Mentors</a></li>
           <li><a href="executive-board.html">Executive Board</a></li>
         </ul>
-      </li>      
+      </li>
+
       <li><a href="how-we-help.html">How We Help</a></li>
       <li><a href="resources.html">Resources</a></li>
       <li><a href="get-involved.html">Get Involved</a></li>
@@ -41,158 +43,212 @@
 <main>
 
 <!-- HERO -->
-<section class="page-hero">
-  <div class="page-hero-content container">
-    <p class="section-label">Who We Are</p>
-    <h1>Students supporting students through every step.</h1>
-    <p>Students Support Students is a student-led nonprofit created to make higher education feel more accessible, understandable, and welcoming.</p>
+<section class="about-hero">
+  <div class="container about-hero-grid">
+
+    <div class="about-hero-copy">
+      <p class="section-label">Who We Are</p>
+      <h1>Students helping students navigate what comes next.</h1>
+      <p>Higher education can be complicated. Finding someone who understands what you're going through shouldn't be.</p>
+
+      <div class="about-hero-actions">
+        <a href="#our-story" class="button button-light">Our Story ↓</a>
+        <a href="mentors.html" class="button button-outline-light">Meet Our Mentors</a>
+      </div>
+    </div>
+
+    <div class="about-hero-image">
+      <img src="images/tabling.png" alt="Students Support Students connecting with students at a community event">
+      <span class="about-image-note">built by students ✦</span>
+    </div>
+
   </div>
 </section>
 
-<!-- WHO WE ARE -->
-<section class="about-introduction section">
-  <div class="about-introduction-content container">
-    <div class="about-introduction-text">
-      <p class="section-label">About Us</p>
-      <h2>Support created by students who understand the journey.</h2>
-      <p>We help high school seniors, college students, and transfer students navigate applications, financial aid, campus life, resources, and important educational transitions.</p>
-      <p>Because our program is designed and operated by students, participants receive guidance from people who have recently faced many of the same questions and challenges.</p>
+<!-- OUR STORY -->
+<section class="our-story section" id="our-story">
+  <div class="container story-grid">
+
+    <div class="story-image">
+      <img src="images/tabling.png" alt="Students Support Students participating in student outreach">
+      <div class="story-image-accent">Students supporting students.</div>
     </div>
 
-    <div class="about-introduction-image">
-      <img src="images/tabling.png" alt="Students Support Students participating in community outreach">
+    <div class="story-content">
+      <p class="section-label">Our Story</p>
+      <h2>We know how overwhelming college can feel when you don't know where to start.</h2>
+
+      <p>Students Support Students was created around a simple idea: students shouldn't have to figure out higher education alone.</p>
+
+      <p>From applications and financial aid to transferring, finding campus resources, and adjusting to college life, many of the questions students face have already been navigated by someone just a few steps ahead.</p>
+
+      <p>We bring those students together—creating a community where experience can become guidance, questions are welcomed, and finding your next step feels a little easier.</p>
     </div>
+
   </div>
 </section>
 
 <!-- MISSION + VISION -->
-<section class="mission-vision section" id="mission">
-  <div class="container">
-    <div class="mission-vision-grid">
+<section class="mission-vision" id="mission">
+  <div class="mission-vision-grid">
 
-      <article class="mission-vision-card">
+    <article class="mission-block mission-block-orange">
+      <div class="mission-block-content">
+        <span class="mission-number">01</span>
         <p class="section-label">Our Mission</p>
-        <h2>Empower students through guidance and connection.</h2>
-        <p>We provide peer mentorship, trusted resources, educational workshops, and personalized support so students can make informed decisions about their future.</p>
-      </article>
+        <h2>Make educational guidance easier to access.</h2>
+        <p>We connect students with peer mentorship, practical resources, educational support, and people who understand the journey so they can make informed decisions about what comes next.</p>
+      </div>
+    </article>
 
-      <article class="mission-vision-card vision-card">
+    <article class="mission-block mission-block-blue">
+      <div class="mission-block-content">
+        <span class="mission-number">02</span>
         <p class="section-label">Our Vision</p>
-        <h2>A community where no student figures it out alone.</h2>
-        <p>We imagine a future where every student has access to encouragement, reliable information, and someone they can turn to when education feels overwhelming.</p>
-      </article>
+        <h2>A future where students don't have to figure it out alone.</h2>
+        <p>We envision a community where students don't need connections, insider knowledge, or all the right answers to find support, understand their options, and move forward.</p>
+      </div>
+    </article>
 
-    </div>
   </div>
 </section>
 
 <!-- VALUES -->
 <section class="values section" id="values">
   <div class="container">
-    <div class="section-heading values-heading">
-      <p class="section-label">Our Values</p>
-      <h2>What guides the way we support students.</h2>
-      <p>These values shape every conversation, resource, workshop, and mentorship connection.</p>
+
+    <div class="values-heading">
+      <div>
+        <p class="section-label">What We Believe</p>
+        <h2>The values behind our work.</h2>
+      </div>
+
+      <p>How we support students matters just as much as the information we share. These principles guide our mentorship, resources, outreach, and community.</p>
     </div>
 
-    <div class="values-honeycomb">
+    <div class="values-grid">
 
-      <article class="hexagon value-leadership">
-        <div class="hexagon-content">
-          <span class="hexagon-icon">01</span>
-          <h3>Student Leadership</h3>
-          <p>Students bring valuable knowledge and lived experience that can help others move forward.</p>
-        </div>
+      <article class="value-card">
+        <span class="value-number">01</span>
+        <h3>Student Leadership</h3>
+        <p>Students bring valuable knowledge and lived experience that can help someone else move forward.</p>
       </article>
 
-      <article class="hexagon value-accessibility">
-        <div class="hexagon-content">
-          <span class="hexagon-icon">02</span>
-          <h3>Accessibility</h3>
-          <p>Support and information should be understandable, easy to find, and available to every student.</p>
-        </div>
+      <article class="value-card">
+        <span class="value-number">02</span>
+        <h3>Accessibility</h3>
+        <p>Support and information should be understandable, approachable, and easy for students to find.</p>
       </article>
 
-      <article class="hexagon value-encouragement">
-        <div class="hexagon-content">
-          <span class="hexagon-icon">03</span>
-          <h3>Encouragement</h3>
-          <p>Students deserve support that builds confidence and helps them recognize their strengths.</p>
-        </div>
+      <article class="value-card">
+        <span class="value-number">03</span>
+        <h3>Encouragement</h3>
+        <p>Students deserve guidance that builds confidence instead of making them feel behind for asking questions.</p>
       </article>
 
-      <article class="hexagon value-community">
-        <div class="hexagon-content">
-          <span class="hexagon-icon">04</span>
-          <h3>Community</h3>
-          <p>Strong communities grow when students share resources, experiences, and opportunities.</p>
-        </div>
+      <article class="value-card">
+        <span class="value-number">04</span>
+        <h3>Community</h3>
+        <p>We become stronger when students share experiences, resources, opportunities, and what they've learned.</p>
       </article>
 
-      <article class="hexagon value-inclusion">
-        <div class="hexagon-content">
-          <span class="hexagon-icon">05</span>
-          <h3>Inclusion</h3>
-          <p>Every student should feel welcomed, respected, and valued regardless of their background.</p>
-        </div>
+      <article class="value-card">
+        <span class="value-number">05</span>
+        <h3>Inclusion</h3>
+        <p>Every student deserves to feel welcomed, respected, and valued regardless of their background or educational path.</p>
       </article>
 
-      <article class="hexagon value-trust">
-        <div class="hexagon-content">
-          <span class="hexagon-icon">06</span>
-          <h3>Trust</h3>
-          <p>We provide honest guidance, respect privacy, and connect students with reliable resources.</p>
-        </div>
+      <article class="value-card">
+        <span class="value-number">06</span>
+        <h3>Trust</h3>
+        <p>We believe in honest peer guidance, respecting students' experiences, and connecting people with reliable resources.</p>
       </article>
 
     </div>
   </div>
 </section>
 
-<!-- MEET OUR PEOPLE -->
-<section class="meet-our-people section">
+<!-- OUR COMMUNITY -->
+<section class="our-community section">
   <div class="container">
-    <div class="section-heading">
+
+    <div class="community-heading">
       <p class="section-label">Our Community</p>
-      <h2>Meet the students behind the support.</h2>
-      <p>Students Support Students is powered by student leaders and mentors who bring their experiences, knowledge, and commitment to helping other students succeed.</p>
+      <h2>Meet the people behind the support.</h2>
+      <p>Students Support Students is powered by mentors and student leaders who turn their own experiences into support for someone else.</p>
     </div>
 
-    <div class="people-grid">
+    <div class="community-grid">
 
-      <article class="people-card">
-        <span class="people-number">01</span>
-        <p class="section-label">Peer Support</p>
-        <h3>Meet Our Mentors</h3>
-        <p>Get to know the students who provide peer guidance, share their experiences, and help students navigate college with someone in their corner.</p>
-        <a href="mentors.html">Meet Our Mentors →</a>
-      </article>
+      <a href="mentors.html" class="community-card community-card-blue">
+        <div class="community-card-top">
+          <span class="community-number">01</span>
+          <span class="community-arrow">↗</span>
+        </div>
 
-      <article class="people-card">
-        <span class="people-number">02</span>
-        <p class="section-label">Student Leadership</p>
-        <h3>Meet Our Executive Board</h3>
-        <p>Meet the student leaders who guide our organization, develop programs, build partnerships, and help Students Support Students grow.</p>
-        <a href="executive-board.html">Meet Our Executive Board →</a>
-      </article>
+        <div class="community-card-content">
+          <p class="section-label">Peer Support</p>
+          <h3>Meet Our Mentors</h3>
+          <p>Meet students from different colleges, majors, and educational pathways who are ready to share what they've learned.</p>
+          <span class="community-link">Explore Our Mentors →</span>
+        </div>
+      </a>
+
+      <a href="executive-board.html" class="community-card community-card-orange">
+        <div class="community-card-top">
+          <span class="community-number">02</span>
+          <span class="community-arrow">↗</span>
+        </div>
+
+        <div class="community-card-content">
+          <p class="section-label">Student Leadership</p>
+          <h3>Executive Board</h3>
+          <p>Meet the student leaders guiding our programs, partnerships, outreach, and the future of Students Support Students.</p>
+          <span class="community-link">Meet Our Leadership →</span>
+        </div>
+      </a>
 
     </div>
+  </div>
+</section>
+
+<!-- WHY PEER SUPPORT -->
+<section class="peer-belief">
+  <div class="container peer-belief-grid">
+
+    <div class="peer-belief-label">
+      <p class="section-label">Why Peer Support?</p>
+      <span>Our approach</span>
+    </div>
+
+    <div class="peer-belief-quote">
+      <span class="quote-mark">“</span>
+      <blockquote>You shouldn't need to know the right person, the right words, or the whole system just to get help.</blockquote>
+      <p>Sometimes the most useful guidance comes from someone who recently had the same question.</p>
+      <a href="how-we-help.html" class="text-link">See How We Help →</a>
+    </div>
+
   </div>
 </section>
 
 <!-- CTA -->
-<section class="about-cta section">
-  <div class="container">
-    <div class="about-cta-content">
-      <p class="section-label">Join Our Community</p>
-      <h2>Students helping students starts with people like you.</h2>
-      <p>Whether you want to become a mentor, volunteer your time, collaborate with our organization, or reach out for support, we'd love to hear from you.</p>
+<section class="about-cta">
+  <div class="container about-cta-grid">
+
+    <div>
+      <p class="section-label">Be Part of It</p>
+      <h2>Students helping students starts with people willing to share what they know.</h2>
+    </div>
+
+    <div class="about-cta-copy">
+      <p>Whether you're looking for support, want to become a mentor, volunteer your time, or collaborate with our organization, there's a place for you here.</p>
 
       <div class="about-cta-actions">
-        <a href="get-involved.html" class="primary-button">Get Involved</a>
-        <a href="contact.html" class="secondary-button">Contact Us</a>
+        <a href="get-involved.html" class="button button-light">Get Involved →</a>
+        <a href="contact.html" class="button button-outline-light">Contact Us</a>
       </div>
     </div>
+
   </div>
 </section>
 
