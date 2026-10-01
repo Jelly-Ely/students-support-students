@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Students Support Students connects students with peer mentorship, practical resources, student guides, and support from people who have been there before.">
-  <title>Students Support Students | Find Your Next Step</title>
+  <meta name="description" content="Students Support Students connects students with peer mentorship, educational resources, student guides, and support throughout their educational journey.">
+  <title>Students Support Students | Student Mentorship & Resources</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/home.css">
 </head>
@@ -13,29 +13,62 @@
 
 <!-- HEADER -->
 <header class="site-header">
-  <nav class="navbar container">
+  <div class="container navbar">
     <a href="index.html" class="logo">
       <img src="images/logo.png" alt="Students Support Students logo">
       <span>Students Support Students</span>
     </a>
 
+    <button class="menu-button" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
     <ul class="nav-links">
       <li><a href="index.html" class="active">Home</a></li>
-    <li class="nav-dropdown">
-      <a href="about.html" class="dropdown-toggle">Who We Are <span aria-hidden="true">⌄</span></a>
-      <ul class="dropdown-menu">
-        <li><a href="about.html#mission">Our Mission</a></li>
-        <li><a href="mentors.html">Meet Our Mentors</a></li>
-        <li><a href="executive-board.html">Executive Board</a></li>
-      </ul>
-    </li>
-      <li><a href="how-we-help.html">How We Help</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Who We Are</button>
+        <ul class="dropdown-menu">
+          <li><a href="about.html#mission">Our Mission</a></li>
+          <li><a href="mentors.html">Meet Our Mentors</a></li>
+          <li><a href="executive-board.html">Executive Board</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">How We Help</button>
+        <ul class="dropdown-menu">
+          <li><a href="how-we-help.html#mentorship">Mentorship</a></li>
+          <li><a href="how-we-help.html#college-guidance">College Guidance</a></li>
+          <li><a href="how-we-help.html#academic-support">Academic Support</a></li>
+          <li><a href="how-we-help.html#career-support">Career Support</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Resources</button>
+        <ul class="dropdown-menu">
+          <li><a href="resources.html#student-guides">Student Guides</a></li>
+          <li><a href="resources.html#financial-aid">Financial Aid</a></li>
+          <li><a href="resources.html#scholarships">Scholarships</a></li>
+          <li><a href="resources.html#transfer-support">Transfer Support</a></li>
+          <li><a href="resources.html#undocumented-students">Undocumented Students</a></li>
+          <li><a href="resources.html">View All Resources</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Get Involved</button>
+        <ul class="dropdown-menu">
+          <li><a href="get-involved.html#become-a-mentor">Become a Mentor</a></li>
+          <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+          <li><a href="get-involved.html#partner">Partner With Us</a></li>
+        </ul>
+      </li>
     </ul>
 
     <a href="contact.html" class="nav-button">Contact Us</a>
-  </nav>
+  </div>
 </header>
 
 <main>
@@ -43,121 +76,210 @@
 <!-- HERO -->
 <section class="hero">
   <div class="hero-content container">
+
     <div class="hero-text">
-      <p class="eyebrow">Built by students, for students.</p>
-      <h1>College comes with a lot of questions. <span>You don't have to answer them alone.</span></h1>
-      <p class="hero-description">Students Support Students connects you with people who've been there, useful resources, and practical next steps—without making you feel like you should already know everything.</p>
+      <p class="section-label">Students Supporting Students</p>
+      <h1>You do not have to navigate college alone.</h1>
+
+      <p class="hero-description">
+        Students Support Students connects students with peer mentors, educational resources, and practical guidance from students who understand what it is like to navigate college themselves.
+      </p>
 
       <div class="hero-buttons">
-        <a href="contact.html" class="button button-primary">Find Support <span aria-hidden="true">→</span></a>
-        <a href="resources.html" class="button button-secondary">Explore Resources</a>
+        <a href="contact.html" class="button button-primary">Contact Us</a>
+        <a href="how-we-help.html" class="button button-secondary">See How We Help</a>
       </div>
-
-      <p class="hero-note">Real students. Real experiences. Support that meets you where you are.</p>
     </div>
 
     <div class="hero-image-wrap">
       <div class="hero-image">
-        <img src="images/tabling.png" alt="Students Support Students tabling and connecting with students">
+        <img src="images/tabling.png" alt="Students Support Students connecting with students at a community event">
       </div>
-      <div class="hero-sticker sticker-one">ask questions ✦</div>
-      <div class="hero-sticker sticker-two">you belong here</div>
-    </div>
-  </div>
-</section>
-
-<!-- QUICK PATHS -->
-<section class="quick-paths section">
-  <div class="container">
-    <div class="section-heading centered-heading">
-      <p class="eyebrow">Where do you want to start?</p>
-      <h2>Find the kind of help that fits <em>right now.</em></h2>
-    </div>
-
-    <div class="path-grid">
-
-      <a class="path-card path-purple" href="mentors.html">
-        <span class="path-number">01</span>
-        <h3>I want to talk to someone</h3>
-        <p>Meet students who can share what they've learned from their own experiences.</p>
-        <span class="path-link">Meet our mentors →</span>
-      </a>
-
-      <a class="path-card path-yellow" href="resources.html">
-        <span class="path-number">02</span>
-        <h3>I'm looking for information</h3>
-        <p>Explore student guides, financial aid, scholarships, transfer support, and other resources.</p>
-        <span class="path-link">Browse resources →</span>
-      </a>
-
-      <a class="path-card path-mint" href="contact.html">
-        <span class="path-number">03</span>
-        <h3>I'm not sure where to start</h3>
-        <p>Tell us what's going on. We'll help you figure out a useful next step.</p>
-        <span class="path-link">Contact our team →</span>
-      </a>
-
-    </div>
-  </div>
-</section>
-
-<!-- PEER SUPPORT -->
-<section class="peer-support section">
-  <div class="container peer-grid">
-
-    <div class="peer-copy">
-      <p class="eyebrow">Why peer support?</p>
-      <h2>Sometimes the person who gets it is someone who's <em>been there too.</em></h2>
-      <p>College systems can be confusing. Asking for help shouldn't be. Students Support Students makes it easier to learn from other students, find trustworthy information, and take the next step with more confidence.</p>
-      <a href="about.html" class="text-link">Why we created SSS →</a>
-    </div>
-
-    <div class="peer-quote" aria-label="Students Support Students belief">
-      <span class="quote-mark">“</span>
-      <p>You shouldn't need to know the right person, the right words, or the whole system just to get help.</p>
-      <span class="scribble">students supporting students</span>
     </div>
 
   </div>
 </section>
 
-<!-- RESOURCE PREVIEW -->
-<section class="resource-preview section">
+<!-- HOW WE HELP -->
+<section class="services section">
   <div class="container">
 
-    <div class="resource-heading-row">
-      <div class="section-heading">
-        <p class="eyebrow">Explore what you're figuring out</p>
-        <h2>Resources made for actual student life.</h2>
-      </div>
-      <a href="resources.html" class="text-link">View all resources →</a>
+    <div class="section-heading">
+      <p class="section-label">How We Help</p>
+      <h2>Support for wherever you are in your journey.</h2>
+      <p>Whether you're preparing for college, transferring, looking for resources, or figuring out what comes next, you don't have to do it alone.</p>
     </div>
 
-    <div class="topic-grid">
-      <a href="resources.html#student-guides" class="topic-pill">Student guides <span>↗</span></a>
-      <a href="resources.html#financial-aid" class="topic-pill">Financial aid <span>↗</span></a>
-      <a href="resources.html#scholarships" class="topic-pill">Scholarships <span>↗</span></a>
-      <a href="resources.html#transfer-support" class="topic-pill">Transfer support <span>↗</span></a>
-      <a href="resources.html#undocumented-students" class="topic-pill">Undocumented students <span>↗</span></a>
-      <a href="mentors.html" class="topic-pill">Peer mentorship <span>↗</span></a>
-      <a href="contact.html" class="topic-pill">Not sure? Ask us <span>↗</span></a>
+    <div class="services-grid">
+
+      <article class="service-card">
+        <div class="service-icon">01</div>
+        <h3>Peer Mentorship</h3>
+        <p>Connect with students who can share their experiences, answer questions, and help you navigate your own educational journey.</p>
+        <a href="mentors.html" class="text-link">Meet Our Mentors →</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">02</div>
+        <h3>College Guidance</h3>
+        <p>Get support with applications, transferring, adjusting to college, campus resources, academics, and other parts of student life.</p>
+        <a href="how-we-help.html" class="text-link">See How We Help →</a>
+      </article>
+
+      <article class="service-card">
+        <div class="service-icon">03</div>
+        <h3>Student Resources</h3>
+        <p>Explore guides, scholarships, financial aid information, transfer resources, and opportunities created or collected for students.</p>
+        <a href="resources.html" class="text-link">Browse Resources →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-it-works section">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="section-label">How It Works</p>
+      <h2>Getting support should feel simple.</h2>
+      <p>You do not need to know exactly what kind of help you need before reaching out.</p>
+    </div>
+
+    <div class="steps-grid">
+
+      <article class="step">
+        <div class="step-number">01</div>
+        <h3>Reach Out</h3>
+        <p>Tell us what you're navigating, what questions you have, or what kind of support you're looking for.</p>
+      </article>
+
+      <article class="step">
+        <div class="step-number">02</div>
+        <h3>Get Connected</h3>
+        <p>We'll help connect you with a student mentor, guide, resource, or opportunity that may be useful.</p>
+      </article>
+
+      <article class="step">
+        <div class="step-number">03</div>
+        <h3>Take Your Next Step</h3>
+        <p>Use what you learn to move forward with more information, support, and confidence.</p>
+      </article>
+
+    </div>
+
+    <div class="section-action">
+      <a href="contact.html" class="button button-primary">Contact Our Team</a>
     </div>
 
   </div>
 </section>
 
-<!-- GET INVOLVED PREVIEW -->
+<!-- MISSION -->
+<section class="mission-preview section">
+  <div class="container mission-grid">
+
+    <div class="mission-image">
+      <img src="images/tabling.png" alt="Students Support Students student outreach">
+    </div>
+
+    <div class="mission-copy">
+      <p class="section-label">Our Mission</p>
+      <h2>Making educational guidance easier to access.</h2>
+
+      <p>Students Support Students was built around a simple idea: students have a lot to teach each other.</p>
+
+      <p>By sharing experiences, resources, and knowledge, we can make it easier for students to understand their options and feel more supported throughout their educational journey.</p>
+
+      <a href="about.html#mission" class="button button-secondary">Learn About Us</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- STUDENT GUIDES -->
+<section class="home-resources section">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="section-label">Student Resources</p>
+      <h2>Start with what you're trying to figure out.</h2>
+      <p>Explore student guides and resources covering some of the questions students face throughout high school, community college, transferring, and university.</p>
+    </div>
+
+    <div class="resource-home-grid">
+
+      <a href="resources.html#student-guides" class="resource-home-card">
+        <span>01</span>
+        <h3>Student Guides</h3>
+        <p>Student-friendly guides that break down important college topics and help make complicated information easier to understand.</p>
+      </a>
+
+      <a href="resources.html#financial-aid" class="resource-home-card">
+        <span>02</span>
+        <h3>Financial Aid</h3>
+        <p>Explore information about FAFSA, the California Dream Act, financial aid, and paying for college.</p>
+      </a>
+
+      <a href="resources.html#scholarships" class="resource-home-card">
+        <span>03</span>
+        <h3>Scholarships</h3>
+        <p>Find scholarship resources and opportunities that can help make higher education more affordable.</p>
+      </a>
+
+      <a href="resources.html#transfer-support" class="resource-home-card">
+        <span>04</span>
+        <h3>Transfer Support</h3>
+        <p>Find resources for navigating community college, transfer planning, applications, and transitioning to a university.</p>
+      </a>
+
+    </div>
+
+    <div class="section-action">
+      <a href="resources.html" class="button button-primary">Explore All Resources</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- OUR COMMUNITY -->
+<section class="team-preview section">
+  <div class="container team-preview-grid">
+
+    <div class="team-preview-copy">
+      <p class="section-label">Our Community</p>
+      <h2>Support powered by students.</h2>
+
+      <p>Our mentors bring experiences from community colleges and universities, different majors, different educational paths, and different communities.</p>
+
+      <p>What connects them is a willingness to share what they have learned so another student has somewhere to start.</p>
+
+      <div class="hero-buttons">
+        <a href="mentors.html" class="button button-light">Meet Our Mentors</a>
+        <a href="executive-board.html" class="button button-outline-light">Executive Board</a>
+      </div>
+    </div>
+
+    <div class="team-preview-image">
+      <img src="images/team.png" alt="Students Support Students team">
+    </div>
+
+  </div>
+</section>
+
+<!-- GET INVOLVED -->
 <section class="home-involvement section">
-  <div class="container peer-grid">
+  <div class="container involvement-preview-grid">
 
-    <div class="peer-copy">
-      <p class="eyebrow">Students supporting students</p>
-      <h2>Your experience could help someone else find their way.</h2>
-      <p>Students Support Students grows through students, volunteers, educators, and community partners who are willing to share what they know and help make educational support easier to access.</p>
+    <div>
+      <p class="section-label">Get Involved</p>
+      <h2>Your experience could help another student.</h2>
+      <p>Students Support Students grows through mentors, volunteers, educators, and community partners willing to share their time, experiences, resources, and opportunities.</p>
     </div>
 
-    <div class="home-involvement-actions">
-      <a href="get-involved.html#become-a-mentor" class="button button-primary">Become a Mentor →</a>
+    <div class="involvement-preview-actions">
+      <a href="get-involved.html#become-a-mentor" class="button button-primary">Become a Mentor</a>
       <a href="get-involved.html" class="button button-secondary">Other Ways to Get Involved</a>
     </div>
 
@@ -166,22 +288,15 @@
 
 <!-- FINAL CTA -->
 <section class="final-cta">
-  <div class="container final-cta-grid">
+  <div class="container final-cta-content">
+    <p class="section-label">We're Here to Help</p>
+    <h2>Not sure where to start?</h2>
+    <p>Ask a question, explore our resources, or connect with students who have navigated something similar.</p>
 
-    <div>
-      <p class="eyebrow">Whatever your next step is</p>
-      <h2>You don't have to take it by yourself.</h2>
+    <div class="cta-buttons">
+      <a href="contact.html" class="button button-light">Contact Us</a>
+      <a href="resources.html" class="button button-outline-light">Browse Resources</a>
     </div>
-
-    <div class="final-cta-copy">
-      <p>Ask a question, find a resource, or connect with someone who's navigated something similar.</p>
-
-      <div class="cta-buttons">
-        <a href="contact.html" class="button button-light">Contact Us →</a>
-        <a href="get-involved.html" class="button button-outline-light">Support Another Student</a>
-      </div>
-    </div>
-
   </div>
 </section>
 
