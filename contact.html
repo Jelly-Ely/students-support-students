@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Students Support Students for student support, mentorship, resources, volunteering, partnerships, and general questions.">
+  <meta name="description" content="Contact Students Support Students for student support, mentorship, volunteering, partnerships, resources, and general questions.">
   <title>Contact Us | Students Support Students</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/contact.css">
@@ -13,213 +13,247 @@
 
 <!-- HEADER -->
 <header class="site-header">
-  <nav class="navbar container">
+  <div class="container navbar">
     <a href="index.html" class="logo">
       <img src="images/logo.png" alt="Students Support Students logo">
       <span>Students Support Students</span>
     </a>
 
+    <button class="menu-button" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
+
       <li class="nav-dropdown">
-        <a href="about.html" class="dropdown-toggle">Who We Are <span aria-hidden="true">⌄</span></a>
+        <button class="dropdown-toggle">Who We Are</button>
         <ul class="dropdown-menu">
           <li><a href="about.html#mission">Our Mission</a></li>
           <li><a href="mentors.html">Meet Our Mentors</a></li>
           <li><a href="executive-board.html">Executive Board</a></li>
         </ul>
-      </li>    
-      <li><a href="how-we-help.html">How We Help</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">How We Help</button>
+        <ul class="dropdown-menu">
+          <li><a href="how-we-help.html#mentorship">Mentorship</a></li>
+          <li><a href="how-we-help.html#college-guidance">College Guidance</a></li>
+          <li><a href="how-we-help.html#academic-support">Academic Support</a></li>
+          <li><a href="how-we-help.html#career-support">Career Support</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Resources</button>
+        <ul class="dropdown-menu">
+          <li><a href="resources.html#student-guides">Student Guides</a></li>
+          <li><a href="resources.html#financial-aid">Financial Aid</a></li>
+          <li><a href="resources.html#scholarships">Scholarships</a></li>
+          <li><a href="resources.html#transfer-support">Transfer Support</a></li>
+          <li><a href="resources.html#undocumented-students">Undocumented Students</a></li>
+          <li><a href="resources.html">View All Resources</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Get Involved</button>
+        <ul class="dropdown-menu">
+          <li><a href="get-involved.html#become-a-mentor">Become a Mentor</a></li>
+          <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+          <li><a href="get-involved.html#partner">Partner With Us</a></li>
+        </ul>
+      </li>
     </ul>
 
-    <a href="contact.html" class="nav-button active">Contact Us</a>
-  </nav>
+    <a href="contact.html" class="nav-button">Contact Us</a>
+  </div>
 </header>
 
 <main>
 
 <!-- HERO -->
-<section class="page-hero contact-hero">
-  <div class="page-hero-content container">
+<section class="page-hero">
+  <div class="container page-hero-content">
     <p class="section-label">Contact Us</p>
     <h1>What can we help you with?</h1>
-    <p>Whether you're a student looking for support, interested in getting involved, or reaching out on behalf of an organization, we'd love to hear from you.</p>
-    <a href="#contact-form-section" class="button button-primary">Send Us a Message</a>
+    <p>Whether you have a college question, want to connect with a mentor, are interested in getting involved, or want to work with our organization, we'd love to hear from you.</p>
   </div>
 </section>
 
-<!-- CONTACT OPTIONS -->
-<section class="contact-options section">
-  <div class="container">
-    <div class="section-heading">
-      <p class="section-label">Start Here</p>
-      <h2>Reach the right place.</h2>
-      <p>Choose the option that best describes why you're reaching out. You can use the form below for any questions you're unsure about.</p>
-    </div>
-
-    <div class="contact-options-grid">
-
-      <article class="contact-option-card">
-        <span>01</span>
-        <h3>Student Support</h3>
-        <p>Have questions about college, financial aid, transferring, campus life, opportunities, or another part of your educational journey?</p>
-        <a href="#contact-form-section" class="text-link">Ask for Support →</a>
-      </article>
-
-      <article class="contact-option-card">
-        <span>02</span>
-        <h3>Mentorship & Volunteering</h3>
-        <p>Interested in becoming a mentor, volunteering, helping at events, or contributing your experience to our community?</p>
-        <a href="get-involved.html" class="text-link">Get Involved →</a>
-      </article>
-
-      <article class="contact-option-card">
-        <span>03</span>
-        <h3>Community Partnerships</h3>
-        <p>Schools, nonprofits, programs, and community organizations can reach out about partnerships, events, workshops, and collaborations.</p>
-        <a href="#contact-form-section" class="text-link">Connect With Us →</a>
-      </article>
-
-      <article class="contact-option-card">
-        <span>04</span>
-        <h3>Resources & Opportunities</h3>
-        <p>Know about a scholarship, program, event, internship, student resource, or opportunity that could benefit our community?</p>
-        <a href="#contact-form-section" class="text-link">Share a Resource →</a>
-      </article>
-
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT FORM -->
-<section class="contact-section section" id="contact-form-section">
-  <div class="contact-layout container">
+<!-- CONTACT -->
+<section class="section contact-section">
+  <div class="container contact-layout">
 
     <div class="contact-information">
-      <p class="section-label">Get in Touch</p>
-      <h2>Send us a message.</h2>
-      <p>Tell us why you're reaching out and provide as much information as you feel comfortable sharing. Your message will be sent to the Students Support Students team.</p>
+      <p class="section-label">Start Here</p>
+      <h2>Reach out to our team.</h2>
+      <p>Choose the option that best matches what you're looking for, or use the contact form to send us a message.</p>
 
-      <div class="contact-email">
-        <p class="section-label">Prefer Email?</p>
-        <h3>studentsupportquestions@gmail.com</h3>
-        <p>You can also contact our team directly by email.</p>
-        <a href="mailto:studentsupportquestions@gmail.com" class="text-link">Email Our Team →</a>
+      <div class="contact-methods">
+
+        <div class="contact-method">
+          <div class="contact-number">01</div>
+          <div>
+            <h3>Student Support</h3>
+            <p>Have questions about college, transferring, financial aid, scholarships, academics, or student life? Reach out and we'll help point you toward a mentor or resource.</p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-number">02</div>
+          <div>
+            <h3>Mentorship & Volunteering</h3>
+            <p>Interested in becoming a student mentor or volunteering with Students Support Students? Tell us how you'd like to get involved.</p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-number">03</div>
+          <div>
+            <h3>Community Partnerships</h3>
+            <p>Schools, student organizations, nonprofits, and community partners can contact us about collaboration, workshops, events, and other opportunities.</p>
+          </div>
+        </div>
+
+        <div class="contact-method">
+          <div class="contact-number">04</div>
+          <div>
+            <h3>Resources & Opportunities</h3>
+            <p>Know about a scholarship, program, internship, resource, or opportunity that could help students? Send it our way.</p>
+          </div>
+        </div>
+
       </div>
     </div>
 
+    <!-- FORM -->
     <div class="contact-form-wrap">
-
       <form class="contact-form" id="contact-form">
+        <p class="section-label">Send a Message</p>
+        <h2>How can we support you?</h2>
+        <p>Fill out the form below and our team will review your message.</p>
 
-        <div class="form-grid">
-
-          <div class="form-group">
-            <label for="contact_first_name">First Name *</label>
-            <input type="text" id="contact_first_name" name="first_name" required>
+        <div class="grid-2">
+          <div>
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required>
           </div>
 
-          <div class="form-group">
-            <label for="contact_last_name">Last Name *</label>
-            <input type="text" id="contact_last_name" name="last_name" required>
+          <div>
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required>
           </div>
-
-          <div class="form-group">
-            <label for="contact_email">Email Address *</label>
-            <input type="email" id="contact_email" name="email" required>
-          </div>
-
-          <div class="form-group">
-            <label for="contact_subject">What can we help with? *</label>
-            <select id="contact_subject" name="subject" required>
-              <option value="">Choose one</option>
-              <option value="student-support">Student Support</option>
-              <option value="general">General Question</option>
-              <option value="mentorship">Mentorship</option>
-              <option value="volunteering">Volunteering</option>
-              <option value="partnership">Community Partnership</option>
-              <option value="resources">Resource or Opportunity</option>
-              <option value="workshop">Workshop or Event</option>
-              <option value="other">Other</option>
-            </select>
-          </div>
-
         </div>
 
-        <div class="form-group">
-          <label for="contact_school">School or Organization</label>
-          <input type="text" id="contact_school" name="school_organization" placeholder="Optional">
+        <div>
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
         </div>
 
-        <div class="form-group">
-          <label for="contact_message">How can we help? *</label>
-          <textarea id="contact_message" name="message" rows="8" placeholder="Tell us a little about why you're reaching out..." required></textarea>
+        <div>
+          <label for="subject">What can we help with?</label>
+          <select id="subject" name="subject" required>
+            <option value="">Select a topic</option>
+            <option value="Student Support">Student Support</option>
+            <option value="General Question">General Question</option>
+            <option value="Mentorship">Mentorship</option>
+            <option value="Volunteering">Volunteering</option>
+            <option value="Community Partnership">Community Partnership</option>
+            <option value="Resource or Opportunity">Resource or Opportunity</option>
+            <option value="Workshop or Event">Workshop or Event</option>
+            <option value="Other">Other</option>
+          </select>
         </div>
 
-        <div class="form-submit-area">
-          <button type="submit" class="button button-primary">Send Message →</button>
-          <p>Your message will be sent to our team at studentsupportquestions@gmail.com.</p>
+        <div>
+          <label for="school_organization">School or Organization <span>(optional)</span></label>
+          <input type="text" id="school_organization" name="school_organization">
         </div>
 
+        <div>
+          <label for="message">Tell us more</label>
+          <textarea id="message" name="message" rows="6" required></textarea>
+        </div>
+
+        <button type="submit" class="button button-primary">Send Message</button>
       </form>
-
     </div>
+
   </div>
 </section>
 
-<!-- STUDENT SUPPORT -->
-<section class="contact-support section">
-  <div class="container">
-    <div class="contact-support-content">
-      <p class="section-label">Looking for Student Support?</p>
-      <h2>You don't need to know exactly what to ask.</h2>
-      <p>If you're navigating something related to college and aren't sure where to start, select <strong>Student Support</strong> in the contact form and tell us what's going on. Our team can help identify a mentor, resource, or useful next step.</p>
+<!-- DIRECT CONTACT -->
+<section class="section contact-direct">
+  <div class="container split-layout">
 
-      <div class="contact-support-links">
-        <a href="mentors.html" class="button button-secondary">Meet Our Mentors</a>
-        <a href="resources.html" class="button button-secondary">Browse Resources</a>
-      </div>
+    <div>
+      <p class="section-label">Prefer Email?</p>
+      <h2>You can contact us directly.</h2>
+      <p>For general questions, student support, resources, and other inquiries, email Students Support Students directly.</p>
+
+      <a href="mailto:studentsupportquestions@gmail.com" class="text-link">
+        studentsupportquestions@gmail.com
+      </a>
     </div>
+
+    <div class="info-card">
+      <p class="section-label">Looking for a Mentor?</p>
+      <h3>Meet students who have been there.</h3>
+      <p>Browse our student mentors to learn about their schools, majors, experiences, and the areas where they can offer guidance.</p>
+      <a href="mentors.html" class="text-link">Meet Our Mentors</a>
+    </div>
+
   </div>
 </section>
 
 <!-- FAQ -->
-<section class="contact-faq section">
+<section class="section contact-faq">
   <div class="container">
+
     <div class="section-heading">
-      <p class="section-label">Before You Reach Out</p>
-      <h2>You may find your answer here.</h2>
+      <p class="section-label">Questions</p>
+      <h2>Before you reach out.</h2>
+      <p>Here are a few quick answers about contacting Students Support Students.</p>
     </div>
 
     <div class="faq-list">
 
       <details class="faq-item">
-        <summary>How do I ask for student support?</summary>
-        <p>Use the contact form above and select Student Support. Tell us what you're navigating and our team can help identify a relevant mentor, resource, or next step.</p>
+        <summary>Do I need to attend a specific school to ask for support?</summary>
+        <p>No. Students Support Students is designed to support students across different educational paths and institutions.</p>
       </details>
 
       <details class="faq-item">
-        <summary>Can I recommend a resource or opportunity?</summary>
-        <p>Yes. Select Resource or Opportunity in the contact form and tell us about the resource, scholarship, program, event, or opportunity you'd like us to consider sharing.</p>
+        <summary>Can I contact a mentor directly?</summary>
+        <p>You can browse our mentor directory to learn more about our mentors. If you're unsure who to connect with, contact our team and we can help point you in the right direction.</p>
       </details>
 
       <details class="faq-item">
-        <summary>How can my school or organization partner with you?</summary>
-        <p>Select Community Partnership and tell us about your organization and the type of collaboration, event, workshop, or partnership you have in mind.</p>
+        <summary>Can organizations contact Students Support Students?</summary>
+        <p>Yes. We welcome messages from schools, student organizations, nonprofits, and community organizations interested in partnerships, events, workshops, or other collaborations.</p>
       </details>
 
       <details class="faq-item">
-        <summary>How can I become a mentor or volunteer?</summary>
-        <p>Visit our Get Involved page to learn about student mentorship, volunteering, workshops, partnerships, and other ways to contribute.</p>
+        <summary>Can I submit a scholarship or student opportunity?</summary>
+        <p>Yes. Use the contact form and choose “Resource or Opportunity” so our team can review it.</p>
       </details>
 
-      <details class="faq-item">
-        <summary>Can I contact you directly by email?</summary>
-        <p>Yes. You can email our team directly at studentsupportquestions@gmail.com.</p>
-      </details>
+    </div>
+  </div>
+</section>
 
+<!-- CTA -->
+<section class="final-cta">
+  <div class="container final-cta-content">
+    <p class="section-label">Not Sure Where to Start?</p>
+    <h2>That's okay. Just ask.</h2>
+    <p>You don't need to know exactly what kind of support you need. Send us your question and we'll help you figure out your next step.</p>
+
+    <div class="cta-buttons">
+      <a href="mailto:studentsupportquestions@gmail.com" class="button button-light">Email Our Team</a>
+      <a href="resources.html" class="button button-outline-light">Browse Resources</a>
     </div>
   </div>
 </section>
@@ -252,8 +286,8 @@
 
     <div class="footer-links">
       <h4>Connect</h4>
-      <a href="https://www.instagram.com/students_support_students/" target="_blank" rel="noopener noreferrer">Instagram</a>
-      <a href="https://www.tiktok.com/@studentssupportstudents" target="_blank" rel="noopener noreferrer">TikTok</a>
+      <a href="https://www.instagram.com/students_support_students/" target="_blank" rel="noopener">Instagram</a>
+      <a href="https://www.tiktok.com/@studentssupportstudents" target="_blank" rel="noopener">TikTok</a>
       <a href="mailto:studentsupportquestions@gmail.com">Email Us</a>
     </div>
 
