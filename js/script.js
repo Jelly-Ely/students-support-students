@@ -39,7 +39,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         <li class="nav-dropdown">
           <button class="dropdown-toggle" type="button" aria-expanded="false">Resources</button>
           <ul class="dropdown-menu">
-            <li><a href="resources.html#student-guides">Student Guides</a></li>
+            <li><a href="student-guides.html">Student Guides</a></li>
             <li><a href="resources.html#financial-aid">Financial Aid</a></li>
             <li><a href="resources.html#scholarships">Scholarships</a></li>
             <li><a href="resources.html#transfer-support">Transfer Support</a></li>
