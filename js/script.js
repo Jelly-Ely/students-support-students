@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded",()=>{
         <li class="nav-dropdown">
           <button class="dropdown-toggle" type="button" aria-expanded="false">About</button>
           <ul class="dropdown-menu">
-            <li><a href="about.html#mission">Our Mission</a></li>
+            <li><a href="about.html">Our Mission</a></li>
             <li><a href="mentors.html">Meet Our Mentors</a></li>
             <li><a href="executive-board.html">Executive Board</a></li>
           </ul>
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded",()=>{
 
       <div class="footer-links">
         <h4>About</h4>
-        <a href="about.html#mission">Our Mission</a>
+        <a href="about.html">Our Mission</a>
         <a href="mentors.html">Our Mentors</a>
         <a href="executive-board.html">Executive Board</a>
       </div>
