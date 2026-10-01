@@ -1,1 +1,339 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><meta name="description" content="Ask Students Support Students for peer guidance and help finding your next step."><title>Find Support | Students Support Students</title><link rel="stylesheet" href="css/style.css"><link rel="stylesheet" href="css/get-help.css"></head><body><header class="site-header"></header><main><section class="page-hero"><div class="page-hero-content container"><p class="section-label">Find Support</p><h1>Tell us what you're figuring out.</h1><p>You don't need to have the perfect question. Share what's going on and we'll help point you toward a student, resource, or useful next step.</p></div></section><section class="section"><div class="container"><form class="admin-form" id="support-request-form"><div class="form-grid"><div class="form-group"><label for="first_name">First Name</label><input type="text" id="first_name" name="first_name" required></div><div class="form-group"><label for="last_name">Last Name</label><input type="text" id="last_name" name="last_name" required></div><div class="form-group"><label for="email">Email</label><input type="email" id="email" name="email" required></div><div class="form-group"><label for="school">School</label><input type="text" id="school" name="school" required></div><div class="form-group"><label for="grade_level">Where are you in school?</label><select id="grade_level" name="grade_level" required><option value="">Choose one</option><option>High School</option><option>Community College</option><option>University</option><option>Graduate School</option></select></div><div class="form-group"><label for="topic">What are you navigating?</label><select id="topic" name="topic" required><option value="">Choose one</option><option>College Applications</option><option>Scholarships</option><option>Financial Aid</option><option>Transfer</option><option>Career Advice</option><option>Choosing a Major</option><option>Campus Life</option><option>I'm Not Sure Yet</option><option>Other</option></select></div></div><div class="form-group"><label for="message">Tell us a little more</label><textarea id="message" name="message" rows="7" placeholder="What's on your mind?" required></textarea></div><button class="button button-primary" type="submit">Send my request →</button><p class="static-form-note">Form delivery is still being connected. For now, submitting this form will not send your information.</p></form></div></section></main><footer class="site-footer"></footer><script src="js/script.js"></script><script src="js/static-forms.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Request peer support from Students Support Students and get connected with a student mentor, resource, or helpful next step.">
+  <title>Get Help | Students Support Students</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/get-help.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="site-header">
+  <nav class="navbar container">
+    <a href="index.html" class="logo">
+      <img src="images/logo.png" alt="Students Support Students logo">
+      <span>Students Support Students</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">Who We Are</a></li>
+      <li><a href="how-we-help.html">How We Help</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="get-involved.html">Get Involved</a></li>
+    </ul>
+
+    <a href="get-help.html" class="nav-button active">Get Help</a>
+  </nav>
+</header>
+
+<main>
+
+<!-- HERO -->
+<section class="page-hero help-request-hero">
+  <div class="page-hero-content container">
+    <p class="section-label">Get Support</p>
+    <h1>You don't have to figure everything out on your own.</h1>
+    <p>Tell us what you're navigating and we'll help connect you with a student mentor, useful resource, or next step based on what you're looking for.</p>
+  </div>
+</section>
+
+<!-- BEFORE YOU SUBMIT -->
+<section class="support-intro section">
+  <div class="container">
+    <div class="support-intro-grid">
+
+      <div class="support-intro-text">
+        <p class="section-label">Start Here</p>
+        <h2>It's okay if you don't know exactly what you need.</h2>
+        <p>You don't need to have the perfect question or know which mentor to contact. Share as much as you're comfortable sharing about what you're working through.</p>
+        <p>Our team can use that information to help point you toward someone or something that may be useful.</p>
+      </div>
+
+      <div class="support-intro-note">
+        <h3>Looking for something specific?</h3>
+        <p>You can also explore our mentors and student resources on your own.</p>
+        <div class="support-intro-links">
+          <a href="mentors.html">Meet Our Mentors →</a>
+          <a href="resources.html">Browse Resources →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- SUPPORT FORM -->
+<section class="support-form-section section" id="request-support">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="section-label">Support Request</p>
+      <h2>Tell us how we can help.</h2>
+      <p>Answer a few questions so we can better understand what kind of support you're looking for.</p>
+    </div>
+
+    <form class="admin-form" id="support-request-form">
+
+      <div class="form-section">
+        <div class="form-section-heading">
+          <span>01</span>
+          <div>
+            <h3>About You</h3>
+            <p>Start with some basic information so we know how to reach you.</p>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+
+          <div class="form-group">
+            <label for="school">School</label>
+            <input type="text" id="school" name="school" placeholder="Your current school">
+          </div>
+
+          <div class="form-group">
+            <label for="grade_level">Where are you in your educational journey?</label>
+            <select id="grade_level" name="grade_level" required>
+              <option value="">Choose one</option>
+              <option value="high-school">High School</option>
+              <option value="community-college">Community College</option>
+              <option value="university">Four-Year College or University</option>
+              <option value="graduate-school">Graduate School</option>
+              <option value="recent-graduate">Recent Graduate</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="first_generation">Are you a first-generation college student?</label>
+            <select id="first_generation" name="first_generation">
+              <option value="">Choose one</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="unsure">I'm Not Sure</option>
+              <option value="prefer-not-to-say">Prefer Not to Say</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-heading">
+          <span>02</span>
+          <div>
+            <h3>What Can We Help With?</h3>
+            <p>Choose the topic that best matches what you're navigating right now.</p>
+          </div>
+        </div>
+
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="topic">Support Topic</label>
+            <select id="topic" name="topic" required>
+              <option value="">Choose one</option>
+              <option value="college-applications">College Applications</option>
+              <option value="financial-aid">Financial Aid</option>
+              <option value="scholarships">Scholarships</option>
+              <option value="transfer">Transfer Process</option>
+              <option value="choosing-major">Choosing a Major</option>
+              <option value="academic-support">Academic Support</option>
+              <option value="campus-life">Campus Life</option>
+              <option value="career-opportunities">Career & Opportunities</option>
+              <option value="internships">Internships</option>
+              <option value="research">Research Opportunities</option>
+              <option value="first-generation">First-Generation College Experience</option>
+              <option value="college-transition">Transitioning to College</option>
+              <option value="not-sure">I'm Not Sure Yet</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="support_preference">What kind of support are you looking for?</label>
+            <select id="support_preference" name="support_preference">
+              <option value="">Choose one</option>
+              <option value="mentor">I'd like to talk with a mentor</option>
+              <option value="resources">I'm looking for resources</option>
+              <option value="both">A mentor and resources</option>
+              <option value="unsure">I'm not sure</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Tell us a little more</label>
+          <textarea id="message" name="message" rows="7" placeholder="What's on your mind? What questions do you have? Share whatever would help us understand what you're looking for." required></textarea>
+        </div>
+      </div>
+
+      <div class="form-section">
+        <div class="form-section-heading">
+          <span>03</span>
+          <div>
+            <h3>Anything Else?</h3>
+            <p>These questions are optional, but they may help us connect you with relevant support.</p>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="mentor_preference">Is there a specific mentor you'd like to connect with?</label>
+          <input type="text" id="mentor_preference" name="mentor_preference" placeholder="Mentor name, or leave blank if you don't have a preference">
+        </div>
+
+        <div class="form-group">
+          <label for="additional_info">Anything else you'd like us to know?</label>
+          <textarea id="additional_info" name="additional_info" rows="5" placeholder="Optional"></textarea>
+        </div>
+      </div>
+
+      <div class="form-submit-area">
+        <button class="button button-primary" type="submit">Send My Request →</button>
+        <p>Only share information you're comfortable providing.</p>
+      </div>
+
+    </form>
+  </div>
+</section>
+
+<!-- WHAT HAPPENS NEXT -->
+<section class="support-next section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-label">What Happens Next?</p>
+      <h2>We'll help you find a next step.</h2>
+    </div>
+
+    <div class="support-next-grid">
+
+      <article class="support-next-card">
+        <span>01</span>
+        <h3>You Reach Out</h3>
+        <p>Submit your support request and tell us what you're currently navigating.</p>
+      </article>
+
+      <article class="support-next-card">
+        <span>02</span>
+        <h3>We Review Your Request</h3>
+        <p>Our team looks at what kind of support you're looking for and identifies a relevant mentor, resource, or next step.</p>
+      </article>
+
+      <article class="support-next-card">
+        <span>03</span>
+        <h3>We Connect You</h3>
+        <p>You'll receive guidance based on your request and, when appropriate, a connection to a student mentor or useful resource.</p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- BOUNDARIES -->
+<section class="peer-support-note section">
+  <div class="container">
+    <div class="peer-support-content">
+      <p class="section-label">A Quick Note</p>
+      <h2>We're students supporting students.</h2>
+      <p>Our mentors share peer guidance based on their own educational experiences. We aren't a replacement for academic advisors, financial aid professionals, legal professionals, mental health professionals, or other specialized services.</p>
+      <p>If your question requires expertise outside our role, we'll do our best to point you toward an appropriate office, organization, or trusted resource.</p>
+    </div>
+  </div>
+</section>
+
+<!-- OTHER OPTIONS -->
+<section class="support-options section">
+  <div class="container">
+    <div class="section-heading">
+      <p class="section-label">Explore on Your Own</p>
+      <h2>Not ready to submit a request?</h2>
+      <p>That's completely okay. You can explore our mentors, student guides, and resource library whenever you're ready.</p>
+    </div>
+
+    <div class="support-options-grid">
+      <a href="mentors.html" class="support-option-card">
+        <span>01</span>
+        <h3>Meet Our Mentors</h3>
+        <p>Browse student mentors by their school, major, experiences, and areas of support.</p>
+        <span class="text-link">Browse Mentors →</span>
+      </a>
+
+      <a href="resources.html#student-guides" class="support-option-card">
+        <span>02</span>
+        <h3>Student Guides</h3>
+        <p>Explore student-friendly guides designed to make important college topics easier to navigate.</p>
+        <span class="text-link">View Guides →</span>
+      </a>
+
+      <a href="resources.html" class="support-option-card">
+        <span>03</span>
+        <h3>Resource Library</h3>
+        <p>Find scholarships, financial aid information, transfer tools, and other educational resources.</p>
+        <span class="text-link">Browse Resources →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="container footer-content">
+
+    <div class="footer-brand">
+      <h3>Students Support Students</h3>
+      <p>Empowering students through mentorship, educational resources, and community support.</p>
+    </div>
+
+    <div class="footer-links">
+      <h4>Who We Are</h4>
+      <a href="about.html#mission">Our Mission</a>
+      <a href="mentors.html">Our Mentors</a>
+      <a href="executive-board.html">Executive Board</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Get Started</h4>
+      <a href="get-help.html">Request Support</a>
+      <a href="get-involved.html">Get Involved</a>
+      <a href="resources.html">Resources</a>
+      <a href="contact.html">Contact</a>
+    </div>
+
+    <div class="footer-links">
+      <h4>Connect</h4>
+      <a href="https://www.instagram.com/students_support_students/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <a href="https://www.tiktok.com/@studentssupportstudents" target="_blank" rel="noopener noreferrer">TikTok</a>
+      <a href="mailto:studentsupportquestions@gmail.com">Email Us</a>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <div class="container">
+      <p>© 2026 Students Support Students. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/static-forms.js"></script>
+</body>
+</html>
