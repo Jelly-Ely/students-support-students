@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Explore student guides, scholarships, financial aid, transfer support, academic resources, career opportunities, and community services.">
+  <meta name="description" content="Explore student guides, scholarships, financial aid, transfer support, and resources for students navigating higher education.">
   <title>Resources | Students Support Students</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/resources.css">
@@ -13,29 +13,62 @@
 
 <!-- HEADER -->
 <header class="site-header">
-  <nav class="navbar container">
+  <div class="container navbar">
     <a href="index.html" class="logo">
       <img src="images/logo.png" alt="Students Support Students logo">
       <span>Students Support Students</span>
     </a>
 
+    <button class="menu-button" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
-    <li class="nav-dropdown">
-      <a href="about.html" class="dropdown-toggle">Who We Are <span aria-hidden="true">⌄</span></a>
-      <ul class="dropdown-menu">
-        <li><a href="about.html#mission">Our Mission</a></li>
-        <li><a href="mentors.html">Meet Our Mentors</a></li>
-        <li><a href="executive-board.html">Executive Board</a></li>
-      </ul>
-    </li>    
-      <li><a href="how-we-help.html">How We Help</a></li>
-      <li><a href="resources.html" class="active">Resources</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Who We Are</button>
+        <ul class="dropdown-menu">
+          <li><a href="about.html#mission">Our Mission</a></li>
+          <li><a href="mentors.html">Meet Our Mentors</a></li>
+          <li><a href="executive-board.html">Executive Board</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">How We Help</button>
+        <ul class="dropdown-menu">
+          <li><a href="how-we-help.html#mentorship">Mentorship</a></li>
+          <li><a href="how-we-help.html#college-guidance">College Guidance</a></li>
+          <li><a href="how-we-help.html#academic-support">Academic Support</a></li>
+          <li><a href="how-we-help.html#career-support">Career Support</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle active">Resources</button>
+        <ul class="dropdown-menu">
+          <li><a href="resources.html#student-guides">Student Guides</a></li>
+          <li><a href="resources.html#financial-aid">Financial Aid</a></li>
+          <li><a href="resources.html#scholarships">Scholarships</a></li>
+          <li><a href="resources.html#transfer-support">Transfer Support</a></li>
+          <li><a href="resources.html#undocumented-students">Undocumented Students</a></li>
+          <li><a href="resources.html">View All Resources</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Get Involved</button>
+        <ul class="dropdown-menu">
+          <li><a href="get-involved.html#become-a-mentor">Become a Mentor</a></li>
+          <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+          <li><a href="get-involved.html#partner">Partner With Us</a></li>
+        </ul>
+      </li>
     </ul>
 
     <a href="contact.html" class="nav-button">Contact Us</a>
-  </nav>
+  </div>
 </header>
 
 <main>
@@ -45,7 +78,7 @@
   <div class="page-hero-content container">
     <p class="section-label">Student Resources</p>
     <h1>Find the information and support you need.</h1>
-    <p>Explore student-created guides, scholarships, financial aid, transfer planning, academic support, career resources, and organizations that can help you navigate your educational journey.</p>
+    <p>Explore student-created guides, scholarships, financial aid, transfer planning, and organizations that can help you navigate your educational journey.</p>
 
     <div class="resource-search-wrap">
       <label for="resource-search" class="resource-search-label">Search Resources</label>
@@ -57,15 +90,16 @@
 <!-- STUDENT GUIDES -->
 <section class="student-guides section" id="student-guides">
   <div class="container">
+
     <div class="section-heading">
       <p class="section-label">Student Guides</p>
       <h2>Resources made to help you navigate college.</h2>
-      <p>Explore practical guides created with students in mind. Each guide breaks down important information into clear and approachable steps you can come back to whenever you need them.</p>
+      <p>Our student guides break down important topics into clear, approachable information you can return to whenever you need it.</p>
     </div>
 
     <div class="guide-grid">
 
-      <a href="#" target="_blank" rel="noopener noreferrer" class="guide-card">
+      <a href="#" class="guide-card">
         <div class="guide-image">
           <div class="guide-placeholder">
             <span>Student Guide</span>
@@ -73,6 +107,7 @@
             <p>Students Support Students</p>
           </div>
         </div>
+
         <div class="guide-content">
           <span class="guide-label">College</span>
           <h3>College Application Guide</h3>
@@ -81,7 +116,7 @@
         </div>
       </a>
 
-      <a href="#" target="_blank" rel="noopener noreferrer" class="guide-card">
+      <a href="#" class="guide-card">
         <div class="guide-image">
           <div class="guide-placeholder">
             <span>Student Guide</span>
@@ -89,6 +124,7 @@
             <p>Students Support Students</p>
           </div>
         </div>
+
         <div class="guide-content">
           <span class="guide-label">Financial Aid</span>
           <h3>Financial Aid Guide</h3>
@@ -97,7 +133,7 @@
         </div>
       </a>
 
-      <a href="#" target="_blank" rel="noopener noreferrer" class="guide-card">
+      <a href="#" class="guide-card">
         <div class="guide-image">
           <div class="guide-placeholder">
             <span>Student Guide</span>
@@ -105,6 +141,7 @@
             <p>Students Support Students</p>
           </div>
         </div>
+
         <div class="guide-content">
           <span class="guide-label">Scholarships</span>
           <h3>Scholarship Guide</h3>
@@ -118,12 +155,14 @@
     <div class="guides-note">
       <p>More student guides are coming soon.</p>
     </div>
+
   </div>
 </section>
 
 <!-- BROWSE BY TOPIC -->
 <section class="resource-categories section">
   <div class="container">
+
     <div class="section-heading">
       <p class="section-label">Browse by Topic</p>
       <h2>Start with what you need right now.</h2>
@@ -163,6 +202,7 @@
 <!-- FEATURED RESOURCES -->
 <section class="featured-resources section">
   <div class="container">
+
     <div class="section-heading">
       <p class="section-label">Featured Resources</p>
       <h2>A few helpful places to begin.</h2>
@@ -196,153 +236,160 @@
   </div>
 </section>
 
-<!-- RESOURCE SECTIONS -->
+<!-- FINANCIAL AID -->
 <div id="resource-sections">
 
-  <section class="resource-section section" id="financial-aid" data-resource-category="financial aid">
-    <div class="container">
-      <div class="resource-section-heading">
-        <div>
-          <p class="section-label">Financial Aid</p>
-          <h2>Financial Aid Resources</h2>
-        </div>
-        <p>Explore trusted information, programs, and organizations related to financial aid.</p>
+<section class="resource-section section" id="financial-aid" data-resource-category="financial aid">
+  <div class="container">
+
+    <div class="resource-section-heading">
+      <div>
+        <p class="section-label">Financial Aid</p>
+        <h2>Financial Aid Resources</h2>
       </div>
-
-      <div class="resource-list">
-
-        <article class="resource-item resource-search-item" data-search="california dream act application california state financial aid undocumented nonresident students">
-          <div>
-            <span class="resource-type">Financial Aid</span>
-            <h3>California Dream Act Application</h3>
-            <p>California state financial aid application for eligible undocumented and nonresident students.</p>
-          </div>
-          <a href="https://dream.csac.ca.gov/" target="_blank" rel="noopener noreferrer">Official Website →</a>
-        </article>
-
-        <article class="resource-item resource-search-item" data-search="fafsa federal financial aid grants work-study loans">
-          <div>
-            <span class="resource-type">Financial Aid</span>
-            <h3>FAFSA</h3>
-            <p>Federal financial aid application for grants, work-study, and student loans.</p>
-          </div>
-          <a href="https://studentaid.gov/" target="_blank" rel="noopener noreferrer">Official Website →</a>
-        </article>
-
-      </div>
+      <p>Explore trusted information, programs, and organizations related to financial aid.</p>
     </div>
-  </section>
 
-  <section class="resource-section section alternate-section" id="scholarships" data-resource-category="scholarships">
-    <div class="container">
-      <div class="resource-section-heading">
+    <div class="resource-list">
+
+      <article class="resource-item resource-search-item" data-search="california dream act application california state financial aid undocumented nonresident students">
         <div>
-          <p class="section-label">Scholarships</p>
-          <h2>Scholarship Resources</h2>
+          <span class="resource-type">Financial Aid</span>
+          <h3>California Dream Act Application</h3>
+          <p>California state financial aid application for eligible undocumented and nonresident students.</p>
         </div>
-        <p>Explore scholarship programs and organizations that help students pursue higher education.</p>
-      </div>
+        <a href="https://dream.csac.ca.gov/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+      </article>
 
-      <div class="resource-list">
-
-        <article class="resource-item resource-search-item" data-search="golden door scholars scholarships undocumented students">
-          <div>
-            <span class="resource-type">Scholarships</span>
-            <h3>Golden Door Scholars</h3>
-            <p>Scholarships and career support for undocumented students.</p>
-          </div>
-          <a href="https://www.goldendoorscholars.org/" target="_blank" rel="noopener noreferrer">Official Website →</a>
-        </article>
-
-        <article class="resource-item resource-search-item" data-search="hispanic scholarship fund scholarships hispanic latino students">
-          <div>
-            <span class="resource-type">Scholarships</span>
-            <h3>Hispanic Scholarship Fund</h3>
-            <p>Scholarships and educational support for students of Hispanic heritage.</p>
-          </div>
-          <a href="https://www.hsf.net/" target="_blank" rel="noopener noreferrer">Official Website →</a>
-        </article>
-
-        <article class="resource-item resource-search-item" data-search="jack kent cooke undergraduate transfer scholarship community college">
-          <div>
-            <span class="resource-type">Scholarships</span>
-            <h3>Jack Kent Cooke Undergraduate Transfer Scholarship</h3>
-            <p>Scholarship support for high-achieving community college students transferring to four-year institutions.</p>
-          </div>
-          <a href="https://www.jkcf.org/our-scholarships/undergraduate-transfer-scholarship/" target="_blank" rel="noopener noreferrer">Official Website →</a>
-        </article>
-
-        <article class="resource-item resource-search-item" data-search="questbridge national college match low income students colleges">
-          <div>
-            <span class="resource-type">Scholarships</span>
-            <h3>QuestBridge National College Match</h3>
-            <p>Connects high-achieving students from low-income backgrounds with partner colleges.</p>
-          </div>
-          <a href="https://www.questbridge.org/" target="_blank" rel="noopener noreferrer">Official Website →</a>
-        </article>
-
-        <article class="resource-item resource-search-item" data-search="thedream.us national scholarship undocumented students">
-          <div>
-            <span class="resource-type">Scholarships</span>
-            <h3>TheDream.US National Scholarship</h3>
-            <p>Scholarship support for eligible undocumented students attending partner colleges.</p>
-          </div>
-          <a href="https://www.thedream.us/" target="_blank" rel="noopener noreferrer">Official Website →</a>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <section class="resource-section section" id="transfer-support" data-resource-category="transfer support">
-    <div class="container">
-      <div class="resource-section-heading">
+      <article class="resource-item resource-search-item" data-search="fafsa federal financial aid grants work-study loans">
         <div>
-          <p class="section-label">Transfer Support</p>
-          <h2>Transfer Support Resources</h2>
+          <span class="resource-type">Financial Aid</span>
+          <h3>FAFSA</h3>
+          <p>Federal financial aid application for grants, work-study, and student loans.</p>
         </div>
-        <p>Explore tools that can help you plan your transfer pathway and understand course requirements.</p>
-      </div>
+        <a href="https://studentaid.gov/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+      </article>
 
-      <div class="resource-list">
-
-        <article class="resource-item resource-search-item" data-search="assist california community college transfer agreements courses">
-          <div>
-            <span class="resource-type">Transfer Support</span>
-            <h3>ASSIST</h3>
-            <p>Official California resource for checking community college course transfer agreements.</p>
-          </div>
-          <a href="https://assist.org/" target="_blank" rel="noopener noreferrer">Official Website →</a>
-        </article>
-
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section class="resource-section section alternate-section" id="undocumented-students" data-resource-category="undocumented students">
-    <div class="container">
-      <div class="resource-section-heading">
+<!-- SCHOLARSHIPS -->
+<section class="resource-section section alternate-section" id="scholarships" data-resource-category="scholarships">
+  <div class="container">
+
+    <div class="resource-section-heading">
+      <div>
+        <p class="section-label">Scholarships</p>
+        <h2>Scholarship Resources</h2>
+      </div>
+      <p>Explore scholarship programs and organizations that help students pursue higher education.</p>
+    </div>
+
+    <div class="resource-list">
+
+      <article class="resource-item resource-search-item" data-search="golden door scholars scholarships undocumented students">
         <div>
-          <p class="section-label">Undocumented Students</p>
-          <h2>Resources for Undocumented Students</h2>
+          <span class="resource-type">Scholarships</span>
+          <h3>Golden Door Scholars</h3>
+          <p>Scholarships and career support for undocumented students.</p>
         </div>
-        <p>Explore educational, career, financial, and community resources supporting undocumented students.</p>
-      </div>
+        <a href="https://www.goldendoorscholars.org/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+      </article>
 
-      <div class="resource-list">
+      <article class="resource-item resource-search-item" data-search="hispanic scholarship fund scholarships hispanic latino students">
+        <div>
+          <span class="resource-type">Scholarships</span>
+          <h3>Hispanic Scholarship Fund</h3>
+          <p>Scholarships and educational support for students of Hispanic heritage.</p>
+        </div>
+        <a href="https://www.hsf.net/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+      </article>
 
-        <article class="resource-item resource-search-item" data-search="immigrants rising undocumented students education career entrepreneurship wellness">
-          <div>
-            <span class="resource-type">Undocumented Students</span>
-            <h3>Immigrants Rising</h3>
-            <p>Educational, career, entrepreneurship, and wellness resources for undocumented young people.</p>
-          </div>
-          <a href="https://immigrantsrising.org/" target="_blank" rel="noopener noreferrer">Official Website →</a>
-        </article>
+      <article class="resource-item resource-search-item" data-search="jack kent cooke undergraduate transfer scholarship community college">
+        <div>
+          <span class="resource-type">Scholarships</span>
+          <h3>Jack Kent Cooke Undergraduate Transfer Scholarship</h3>
+          <p>Scholarship support for high-achieving community college students transferring to four-year institutions.</p>
+        </div>
+        <a href="https://www.jkcf.org/our-scholarships/undergraduate-transfer-scholarship/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+      </article>
 
-      </div>
+      <article class="resource-item resource-search-item" data-search="questbridge national college match low income students colleges">
+        <div>
+          <span class="resource-type">Scholarships</span>
+          <h3>QuestBridge National College Match</h3>
+          <p>Connects high-achieving students from low-income backgrounds with partner colleges.</p>
+        </div>
+        <a href="https://www.questbridge.org/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+      </article>
+
+      <article class="resource-item resource-search-item" data-search="thedream.us national scholarship undocumented students">
+        <div>
+          <span class="resource-type">Scholarships</span>
+          <h3>TheDream.US National Scholarship</h3>
+          <p>Scholarship support for eligible undocumented students attending partner colleges.</p>
+        </div>
+        <a href="https://www.thedream.us/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+      </article>
+
     </div>
-  </section>
+  </div>
+</section>
+
+<!-- TRANSFER SUPPORT -->
+<section class="resource-section section" id="transfer-support" data-resource-category="transfer support">
+  <div class="container">
+
+    <div class="resource-section-heading">
+      <div>
+        <p class="section-label">Transfer Support</p>
+        <h2>Transfer Support Resources</h2>
+      </div>
+      <p>Explore tools that can help you plan your transfer pathway and understand course requirements.</p>
+    </div>
+
+    <div class="resource-list">
+
+      <article class="resource-item resource-search-item" data-search="assist california community college transfer agreements courses">
+        <div>
+          <span class="resource-type">Transfer Support</span>
+          <h3>ASSIST</h3>
+          <p>Official California resource for checking community college course transfer agreements.</p>
+        </div>
+        <a href="https://assist.org/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- UNDOCUMENTED STUDENTS -->
+<section class="resource-section section alternate-section" id="undocumented-students" data-resource-category="undocumented students">
+  <div class="container">
+
+    <div class="resource-section-heading">
+      <div>
+        <p class="section-label">Undocumented Students</p>
+        <h2>Resources for Undocumented Students</h2>
+      </div>
+      <p>Explore educational, career, financial, and community resources supporting undocumented students.</p>
+    </div>
+
+    <div class="resource-list">
+
+      <article class="resource-item resource-search-item" data-search="immigrants rising undocumented students education career entrepreneurship wellness">
+        <div>
+          <span class="resource-type">Undocumented Students</span>
+          <h3>Immigrants Rising</h3>
+          <p>Educational, career, entrepreneurship, and wellness resources for undocumented young people.</p>
+        </div>
+        <a href="https://immigrantsrising.org/" target="_blank" rel="noopener noreferrer">Official Website →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
 
 </div>
 
