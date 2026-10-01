@@ -13,29 +13,62 @@
 
 <!-- HEADER -->
 <header class="site-header">
-  <nav class="navbar container">
+  <div class="container navbar">
     <a href="index.html" class="logo">
       <img src="images/logo.png" alt="Students Support Students logo">
       <span>Students Support Students</span>
     </a>
 
+    <button class="menu-button" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
+
       <li class="nav-dropdown">
-        <a href="about.html" class="dropdown-toggle">Who We Are <span aria-hidden="true">⌄</span></a>
+        <button class="dropdown-toggle">Who We Are</button>
         <ul class="dropdown-menu">
           <li><a href="about.html#mission">Our Mission</a></li>
           <li><a href="mentors.html">Meet Our Mentors</a></li>
           <li><a href="executive-board.html">Executive Board</a></li>
         </ul>
       </li>
-      <li><a href="how-we-help.html" class="active">How We Help</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle active">How We Help</button>
+        <ul class="dropdown-menu">
+          <li><a href="how-we-help.html#mentorship">Mentorship</a></li>
+          <li><a href="how-we-help.html#college-guidance">College Guidance</a></li>
+          <li><a href="how-we-help.html#academic-support">Academic Support</a></li>
+          <li><a href="how-we-help.html#career-support">Career Support</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Resources</button>
+        <ul class="dropdown-menu">
+          <li><a href="resources.html#student-guides">Student Guides</a></li>
+          <li><a href="resources.html#financial-aid">Financial Aid</a></li>
+          <li><a href="resources.html#scholarships">Scholarships</a></li>
+          <li><a href="resources.html#transfer-support">Transfer Support</a></li>
+          <li><a href="resources.html#undocumented-students">Undocumented Students</a></li>
+          <li><a href="resources.html">View All Resources</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Get Involved</button>
+        <ul class="dropdown-menu">
+          <li><a href="get-involved.html#become-a-mentor">Become a Mentor</a></li>
+          <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+          <li><a href="get-involved.html#partner">Partner With Us</a></li>
+        </ul>
+      </li>
     </ul>
 
     <a href="contact.html" class="nav-button">Contact Us</a>
-  </nav>
+  </div>
 </header>
 
 <main>
@@ -57,6 +90,7 @@
 <!-- SUPPORT AREAS -->
 <section class="support-services section" id="support">
   <div class="container">
+
     <div class="section-heading">
       <p class="section-label">What We Can Help With</p>
       <h2>Support for different parts of your journey.</h2>
@@ -114,10 +148,11 @@
 <!-- OUR APPROACH -->
 <section class="support-approach section">
   <div class="container">
+
     <div class="section-heading">
       <p class="section-label">Our Approach</p>
       <h2>Support that meets you where you are.</h2>
-      <p>You might need a conversation with someone who's been through it, a reliable resource, or simply help figuring out where to start.</p>
+      <p>You might need a conversation with someone who's been through it, a useful guide, or simply help figuring out where to start.</p>
     </div>
 
     <div class="support-approach-grid">
@@ -150,6 +185,7 @@
 <!-- HOW IT WORKS -->
 <section class="help-process section">
   <div class="container">
+
     <div class="section-heading">
       <p class="section-label">How It Works</p>
       <h2>Getting support should feel simple.</h2>
@@ -181,12 +217,14 @@
     <div class="help-process-action">
       <a href="contact.html" class="button button-primary">Contact Our Team</a>
     </div>
+
   </div>
 </section>
 
 <!-- WHO WE SUPPORT -->
 <section class="who-we-support section">
   <div class="container">
+
     <div class="section-heading">
       <p class="section-label">Who We Support</p>
       <h2>Wherever you are in your educational journey.</h2>
@@ -225,6 +263,7 @@
 <!-- FAQ -->
 <section class="help-faq section">
   <div class="container">
+
     <div class="section-heading">
       <p class="section-label">Common Questions</p>
       <h2>Questions about getting support?</h2>
@@ -270,6 +309,7 @@
 <section class="help-cta section">
   <div class="container">
     <div class="help-cta-content">
+
       <p class="section-label">Ready When You Are</p>
       <h2>Not sure where to start? Start with us.</h2>
       <p>You don't need to have everything figured out before reaching out. Tell us what's on your mind and we'll help you find a next step.</p>
@@ -278,6 +318,7 @@
         <a href="contact.html" class="button button-primary">Contact Us</a>
         <a href="mentors.html" class="button button-secondary">Browse Mentors</a>
       </div>
+
     </div>
   </div>
 </section>
