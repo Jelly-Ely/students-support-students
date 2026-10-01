@@ -13,29 +13,62 @@
 
 <!-- HEADER -->
 <header class="site-header">
-  <nav class="navbar container">
+  <div class="container navbar">
     <a href="index.html" class="logo">
       <img src="images/logo.png" alt="Students Support Students logo">
       <span>Students Support Students</span>
     </a>
 
+    <button class="menu-button" aria-label="Open navigation menu">
+      <span></span><span></span><span></span>
+    </button>
+
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
+
       <li class="nav-dropdown">
-        <a href="about.html" class="dropdown-toggle">Who We Are <span aria-hidden="true">⌄</span></a>
+        <button class="dropdown-toggle">Who We Are</button>
         <ul class="dropdown-menu">
           <li><a href="about.html#mission">Our Mission</a></li>
           <li><a href="mentors.html">Meet Our Mentors</a></li>
           <li><a href="executive-board.html">Executive Board</a></li>
         </ul>
-      </li>  
-      <li><a href="how-we-help.html">How We Help</a></li>
-      <li><a href="resources.html">Resources</a></li>
-      <li><a href="get-involved.html">Get Involved</a></li>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">How We Help</button>
+        <ul class="dropdown-menu">
+          <li><a href="how-we-help.html#mentorship">Mentorship</a></li>
+          <li><a href="how-we-help.html#college-guidance">College Guidance</a></li>
+          <li><a href="how-we-help.html#academic-support">Academic Support</a></li>
+          <li><a href="how-we-help.html#career-support">Career Support</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Resources</button>
+        <ul class="dropdown-menu">
+          <li><a href="resources.html#student-guides">Student Guides</a></li>
+          <li><a href="resources.html#financial-aid">Financial Aid</a></li>
+          <li><a href="resources.html#scholarships">Scholarships</a></li>
+          <li><a href="resources.html#transfer-support">Transfer Support</a></li>
+          <li><a href="resources.html#undocumented-students">Undocumented Students</a></li>
+          <li><a href="resources.html">View All Resources</a></li>
+        </ul>
+      </li>
+
+      <li class="nav-dropdown">
+        <button class="dropdown-toggle">Get Involved</button>
+        <ul class="dropdown-menu">
+          <li><a href="get-involved.html#become-a-mentor">Become a Mentor</a></li>
+          <li><a href="get-involved.html#volunteer">Volunteer</a></li>
+          <li><a href="get-involved.html#partner">Partner With Us</a></li>
+        </ul>
+      </li>
     </ul>
 
     <a href="contact.html" class="nav-button">Contact Us</a>
-  </nav>
+  </div>
 </header>
 
 <main>
@@ -52,6 +85,7 @@
 <!-- INTRODUCTION -->
 <section class="team-introduction section">
   <div class="team-introduction-content container">
+
     <div class="team-introduction-text">
       <p class="section-label">Our Leadership</p>
       <h2>Led by students. Built for students.</h2>
@@ -64,12 +98,14 @@
       <p>For general questions about Students Support Students, mentorship, resources, or opportunities to work with us, reach out through our Contact Us page.</p>
       <a href="contact.html" class="button button-primary">Contact Our Team</a>
     </div>
+
   </div>
 </section>
 
 <!-- EXECUTIVE BOARD -->
 <section class="board-section section">
   <div class="container">
+
     <div class="section-heading">
       <p class="section-label">Meet the Board</p>
       <h2>The students helping lead our organization.</h2>
@@ -82,11 +118,14 @@
         <div class="board-photo">
           <img src="images/mentors/JuliannaLazono.png" alt="Julianna Lazono">
         </div>
+
         <div class="board-card-content">
           <p class="board-role">Founder & Executive Director</p>
           <h2>Julianna Lazono</h2>
           <p class="board-school">California State University, Chico</p>
+
           <p>Julianna is passionate about public service, advocacy, expanding access to education, and creating opportunities for students. Her experiences in student leadership and community involvement helped inspire her commitment to building a student-led organization where students can support one another.</p>
+
           <a href="mailto:director@studentssupportsstudents.org" class="mentor-button">Contact Julianna</a>
         </div>
       </article>
@@ -95,11 +134,14 @@
         <div class="board-photo">
           <img src="images/mentors/AngelinaCruzOchoa.png" alt="Angelina Mariee Cruz-Ochoa">
         </div>
+
         <div class="board-card-content">
           <p class="board-role">Secretary</p>
           <h2>Angelina "Angie" Cruz-Ochoa</h2>
           <p class="board-school">San Joaquin Delta College</p>
+
           <p>Angie is a Business Administration student passionate about advocacy, leadership, and creating opportunities for students. As Secretary, she supports the organization while helping Students Support Students continue building a strong and student-centered community.</p>
+
           <a href="mailto:secretary@studentssupportsstudents.org" class="mentor-button">Contact Angie</a>
         </div>
       </article>
@@ -111,6 +153,7 @@
 <!-- HOW WE LEAD -->
 <section class="board-values section">
   <div class="container">
+
     <div class="section-heading">
       <p class="section-label">How We Lead</p>
       <h2>Leadership grounded in our mission.</h2>
@@ -118,6 +161,7 @@
     </div>
 
     <div class="board-values-grid">
+
       <article class="board-value-card">
         <span>01</span>
         <h3>Student-Centered</h3>
@@ -135,6 +179,7 @@
         <h3>Accessible</h3>
         <p>We work to make information, mentorship, and educational opportunities easier for students to find and understand.</p>
       </article>
+
     </div>
   </div>
 </section>
