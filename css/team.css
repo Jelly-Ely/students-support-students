@@ -30,9 +30,8 @@
   position:relative;
   padding:35px;
   border:2px solid var(--blue);
-  border-radius:10px;
   background:var(--white);
-  box-shadow:8px 8px 0 var(--yellow)
+  box-shadow:8px 8px 0 var(--light-blue)
 }
 
 .team-introduction-note:before{
@@ -83,10 +82,14 @@
   overflow:hidden;
   flex-direction:column;
   border:1px solid var(--border);
-  border-radius:12px;
+  border-top:5px solid var(--blue);
   background:var(--white);
-  box-shadow:var(--shadow-sm);
+  box-shadow:var(--shadow-small);
   transition:transform var(--transition),box-shadow var(--transition)
+}
+
+.mentor-card:nth-child(3n+2){
+  border-top-color:var(--orange)
 }
 
 .mentor-card:hover{
@@ -101,7 +104,7 @@
   width:100%;
   aspect-ratio:1 / 1;
   overflow:hidden;
-  background:var(--blue-light)
+  background:var(--light-blue)
 }
 
 .mentor-photo:after{
@@ -112,6 +115,14 @@
   height:8px;
   background:var(--orange);
   content:""
+}
+
+.mentor-card:nth-child(3n+2) .mentor-photo:after{
+  background:var(--blue)
+}
+
+.mentor-card:nth-child(3n) .mentor-photo:after{
+  background:var(--orange)
 }
 
 .mentor-photo img{
@@ -132,7 +143,7 @@
 
 .mentor-school{
   margin-bottom:8px;
-  color:var(--orange-dark)!important;
+  color:var(--dark-orange)!important;
   font-size:.72rem;
   font-weight:800;
   letter-spacing:.08em;
@@ -149,14 +160,14 @@
 
 .mentor-major{
   margin-bottom:17px;
-  color:var(--ink)!important;
+  color:var(--text)!important;
   font-size:.91rem;
   font-weight:700
 }
 
 .mentor-card-content>p:not(.mentor-school):not(.mentor-major){
   margin-bottom:20px;
-  color:var(--muted);
+  color:var(--gray);
   font-size:.91rem;
   line-height:1.65
 }
@@ -173,49 +184,39 @@
 .mentor-topics span{
   display:inline-block;
   padding:6px 9px;
-  border-radius:5px;
-  background:var(--blue-light);
-  color:var(--blue-dark);
+  border-radius:4px;
+  background:var(--light-blue);
+  color:var(--blue);
   font-size:.7rem;
   font-weight:700
 }
 
-.mentor-topics span:nth-child(3n+2){
-  background:var(--orange-light);
-  color:var(--orange-dark)
-}
-
-.mentor-topics span:nth-child(3n){
-  background:var(--yellow-light);
-  color:var(--yellow-dark)
+.mentor-topics span:nth-child(even){
+  background:var(--light-orange);
+  color:var(--dark-orange)
 }
 
 
 /* EMAIL BUTTON */
 .mentor-button{
+  display:flex;
   width:100%;
   min-height:44px;
+  align-items:center;
+  justify-content:center;
   margin-top:auto;
   padding:11px 16px;
-  border-radius:7px;
+  border-radius:5px;
   background:var(--blue);
   color:var(--white);
   font-size:.84rem;
-  font-weight:800
+  font-weight:800;
+  transition:background var(--transition),transform var(--transition)
 }
 
 .mentor-button:hover{
-  background:var(--blue-dark)
-}
-
-
-/* EVERY THIRD CARD GETS A SMALL ORANGE ACCENT */
-.mentor-card:nth-child(3n+2) .mentor-photo:after{
-  background:var(--yellow)
-}
-
-.mentor-card:nth-child(3n) .mentor-photo:after{
-  background:var(--blue)
+  background:var(--dark-blue);
+  transform:translateY(-2px)
 }
 
 
@@ -232,9 +233,8 @@
   overflow:hidden;
   border:1px solid var(--border);
   border-top:6px solid var(--blue);
-  border-radius:12px;
   background:var(--white);
-  box-shadow:var(--shadow-sm)
+  box-shadow:var(--shadow-small)
 }
 
 .board-card:nth-child(even){
@@ -273,7 +273,7 @@
 }
 
 .leadership-card:nth-child(3){
-  border-top-color:var(--yellow)
+  border-top-color:var(--blue)
 }
 
 .leadership-card h3{
@@ -288,36 +288,64 @@
 
 /* MENTOR HELP CTA */
 .mentor-help{
-  background:var(--yellow)
+  position:relative;
+  overflow:hidden;
+  background:var(--orange);
+  color:var(--white)
+}
+
+.mentor-help:before{
+  position:absolute;
+  top:-80px;
+  right:8%;
+  width:170px;
+  height:170px;
+  border:25px solid rgba(255,255,255,.1);
+  border-radius:50%;
+  content:""
+}
+
+.mentor-help:after{
+  position:absolute;
+  right:-100px;
+  bottom:-150px;
+  width:290px;
+  height:290px;
+  border-radius:50%;
+  background:rgba(15,40,102,.16);
+  content:""
 }
 
 .mentor-help-content{
+  position:relative;
+  z-index:1;
   max-width:780px
 }
 
 .mentor-help .section-label{
-  color:var(--orange-dark)
+  color:var(--white)
 }
 
 .mentor-help h2{
   margin-bottom:18px;
-  color:var(--blue)
+  color:var(--white)
 }
 
 .mentor-help p{
   max-width:620px;
-  color:var(--ink);
+  color:rgba(255,255,255,.92);
   font-size:1.04rem
 }
 
 .mentor-help .button{
   margin-top:27px;
-  background:var(--blue);
-  color:var(--white)
+  background:var(--white);
+  color:var(--orange)
 }
 
 .mentor-help .button:hover{
-  background:var(--blue-dark)
+  background:var(--blue);
+  color:var(--white)
 }
 
 
@@ -356,17 +384,14 @@
 
   .team-introduction-note{
     padding:28px;
-    box-shadow:6px 6px 0 var(--yellow)
+    box-shadow:6px 6px 0 var(--light-blue)
   }
 
   .mentor-card-content{
     padding:24px
   }
 
-  .mentor-photo{
-    aspect-ratio:1 / 1
-  }
-
+  .mentor-photo,
   .board-card .mentor-photo{
     aspect-ratio:1 / 1
   }
