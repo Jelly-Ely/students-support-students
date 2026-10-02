@@ -969,22 +969,26 @@ textarea:focus-visible{
 
 /* COMMUNITY EVENT PHOTOS */
 .community-photo-strip{
-  width:min(1180px,calc(100% - 48px));
-  margin:70px auto;
+  width:min(820px,calc(100% - 48px));
+  height:330px;
+  margin:60px auto;
   overflow:hidden;
-  border-radius:10px;
+  border-radius:22px;
   background:var(--cream);
   box-shadow:var(--shadow-small)
 }
 .community-photo-strip img{
   display:block;
   width:100%;
-  height:auto;
-  object-fit:contain
+  height:100%;
+  object-fit:cover;
+  object-position:center 30%
 }
 @media(max-width:700px){
   .community-photo-strip{
     width:calc(100% - 30px);
-    margin:45px auto
+    height:250px;
+    margin:45px auto;
+    border-radius:18px
   }
 }
