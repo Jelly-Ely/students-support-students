@@ -294,13 +294,12 @@
 
 /* VALUES */
 .values{
-  overflow:hidden;
   background:var(--cream)
 }
 
 .values-heading{
   max-width:720px;
-  margin:0 auto 60px;
+  margin:0 auto 48px;
   text-align:center
 }
 
@@ -316,60 +315,66 @@
 }
 
 .values-honeycomb{
-  display:flex;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
   max-width:1050px;
   margin:0 auto;
-  flex-wrap:wrap;
-  justify-content:center;
-  gap:18px 12px
+  gap:18px
 }
 
 .hexagon{
   position:relative;
-  display:flex;
-  width:300px;
-  min-height:260px;
-  padding:42px 34px;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  clip-path:polygon(25% 0%,75% 0%,100% 50%,75% 100%,25% 100%,0% 50%);
-  transition:transform .2s ease
+  min-height:210px;
+  padding:30px;
+  border:1px solid var(--border);
+  border-top:5px solid var(--blue);
+  border-radius:10px;
+  background:var(--white)!important;
+  box-shadow:var(--shadow-small);
+  transition:transform .2s ease,box-shadow .2s ease
+}
+
+.hexagon:nth-child(even){
+  border-top-color:var(--orange)
 }
 
 .hexagon:hover{
-  transform:translateY(-6px)
+  transform:translateY(-4px);
+  box-shadow:var(--shadow)
 }
 
 .hexagon-content{
-  max-width:205px
+  max-width:none
+}
+
+.hexagon-icon{
+  display:grid;
+  width:38px;
+  height:38px;
+  margin-bottom:24px;
+  place-items:center;
+  border-radius:50%;
+  background:var(--light-blue);
+  color:var(--blue);
+  font-size:.75rem;
+  font-weight:900
+}
+
+.hexagon:nth-child(even) .hexagon-icon{
+  background:var(--light-orange);
+  color:var(--dark-orange)
 }
 
 .hexagon h3{
-  margin-bottom:10px;
-  color:var(--white);
-  font-size:1.28rem
+  margin-bottom:9px;
+  color:var(--blue);
+  font-size:1.2rem
 }
 
 .hexagon p{
-  color:rgba(255,255,255,.92);
+  color:var(--gray);
   font-size:.9rem;
-  line-height:1.55
-}
-
-.value-leadership,
-.value-community,
-.value-trust{
-  background:var(--blue)
-}
-
-.value-accessibility,
-.value-inclusion{
-  background:var(--orange)
-}
-
-.value-encouragement{
-  background:var(--dark-blue)
+  line-height:1.6
 }
 
 
@@ -606,9 +611,8 @@
     grid-template-columns:1fr 1fr
   }
 
-  .hexagon{
-    width:280px;
-    min-height:245px
+  .values-honeycomb{
+    grid-template-columns:repeat(2,1fr)
   }
 }
 
@@ -638,20 +642,13 @@
 
 @media(max-width:700px){
   .values-honeycomb{
-    display:grid;
     grid-template-columns:1fr;
-    gap:16px
+    gap:14px
   }
 
   .hexagon{
-    width:100%;
-    min-height:230px;
-    margin:0;
-    clip-path:polygon(8% 0%,92% 0%,100% 50%,92% 100%,8% 100%,0% 50%)
-  }
-
-  .hexagon-content{
-    max-width:75%
+    min-height:auto;
+    padding:27px
   }
 }
 
