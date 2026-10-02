@@ -251,6 +251,45 @@
   line-height:1.65
 }
 
+.student-path-grid{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:18px
+}
+
+.student-path-card{
+  min-height:210px;
+  padding:30px;
+  border:1px solid var(--border);
+  border-top:5px solid var(--blue);
+  border-radius:9px;
+  background:var(--white);
+  box-shadow:var(--shadow-small)
+}
+
+.student-path-card:nth-child(even){
+  border-top-color:var(--orange)
+}
+
+.student-path-card span{
+  display:block;
+  margin-bottom:30px;
+  color:var(--dark-orange);
+  font-size:.75rem;
+  font-weight:900;
+  letter-spacing:.08em
+}
+
+.student-path-card h3{
+  margin-bottom:10px;
+  color:var(--blue)
+}
+
+.student-path-card p{
+  color:var(--gray);
+  line-height:1.65
+}
+
 
 /* FAQ */
 .help-faq{
@@ -354,7 +393,8 @@
     grid-template-columns:repeat(2,1fr)
   }
 
-  .help-audience-grid{
+  .help-audience-grid,
+  .student-path-grid{
     grid-template-columns:repeat(2,1fr)
   }
 
@@ -366,7 +406,8 @@
 @media(max-width:650px){
   .help-service-grid,
   .help-steps-grid,
-  .help-audience-grid{
+  .help-audience-grid,
+  .student-path-grid{
     grid-template-columns:1fr
   }
 
