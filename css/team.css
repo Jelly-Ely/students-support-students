@@ -295,6 +295,90 @@
 }
 
 
+/* EXECUTIVE BOARD VALUES */
+.board-values{
+  background:var(--cream)
+}
+
+.board-values .section-heading{
+  max-width:760px
+}
+
+.board-values .section-heading h2{
+  color:var(--blue)
+}
+
+.board-values-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px
+}
+
+.board-value-card{
+  position:relative;
+  min-height:230px;
+  padding:32px;
+  border:1px solid var(--border);
+  border-top:5px solid var(--blue);
+  background:var(--white);
+  box-shadow:var(--shadow-small)
+}
+
+.board-value-card:nth-child(2){
+  border-top-color:var(--orange)
+}
+
+.board-value-card span{
+  display:grid;
+  width:42px;
+  height:42px;
+  margin-bottom:30px;
+  place-items:center;
+  background:var(--light-blue);
+  color:var(--blue);
+  font-size:.75rem;
+  font-weight:900
+}
+
+.board-value-card:nth-child(2) span{
+  background:var(--light-orange);
+  color:var(--dark-orange)
+}
+
+.board-value-card h3{
+  margin-bottom:10px;
+  color:var(--blue)
+}
+
+.board-value-card p{
+  line-height:1.7
+}
+
+.board-cta{
+  background:var(--light-blue)
+}
+
+.board-cta-content{
+  max-width:850px;
+  padding:45px;
+  border-left:7px solid var(--orange);
+  background:var(--white);
+  box-shadow:var(--shadow-small)
+}
+
+.board-cta-content h2{
+  margin-bottom:14px;
+  color:var(--blue)
+}
+
+.board-cta-content p{
+  max-width:720px
+}
+
+.board-cta-content .button{
+  margin-top:25px
+}
+
 /* LEADERSHIP / APPROACH CARDS */
 .leadership-section{
   background:var(--cream)
@@ -411,7 +495,8 @@
     max-width:650px
   }
 
-  .leadership-grid{
+  .leadership-grid,
+  .board-values-grid{
     grid-template-columns:1fr
   }
 }
