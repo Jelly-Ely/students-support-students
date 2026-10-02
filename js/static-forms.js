@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded",()=>{
-  const formIds=[
-    "contact-form",
-    "involvement-interest-form",
-    "mentor-interest-form",
-    "support-request-form"
-  ];
+  const recipient="studentsupportquestions@gmail.com";
+  const formIds=["contact-form","involvement-interest-form","mentor-interest-form","support-request-form"];
 
   formIds.forEach(id=>{
     const form=document.getElementById(id);
@@ -12,23 +8,21 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     form.addEventListener("submit",event=>{
       event.preventDefault();
+      if(!form.reportValidity())return;
 
-      const submitButton=form.querySelector('button[type="submit"],input[type="submit"]');
-      const originalText=submitButton?.textContent;
+      const data=new FormData(form);
+      const subject=data.get("subject")||"Website Contact";
+      const fields=[];
 
-      if(submitButton){
-        submitButton.disabled=true;
-        submitButton.textContent="Not Connected Yet";
+      for(const [key,value] of data.entries()){
+        if(!value||key==="subject")continue;
+        const label=key.replaceAll("_"," ").replace(/\b\w/g,char=>char.toUpperCase());
+        fields.push(`${label}: ${value}`);
       }
 
-      alert(
-        "Thanks for reaching out! Online form submissions are not connected yet. Please email studentsupportquestions@gmail.com so our team can receive your message."
-      );
-
-      if(submitButton){
-        submitButton.disabled=false;
-        submitButton.textContent=originalText;
-      }
+      const emailSubject=`Students Support Students — ${subject}`;
+      const body=fields.join("\n\n");
+      window.location.href=`mailto:${recipient}?subject=${encodeURIComponent(emailSubject)}&body=${encodeURIComponent(body)}`;
     });
   });
 });
