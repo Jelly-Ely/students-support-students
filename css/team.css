@@ -241,12 +241,49 @@
   border-top-color:var(--orange)
 }
 
-.board-card .mentor-photo{
-  aspect-ratio:4 / 3
+.board-photo{
+  width:100%;
+  aspect-ratio:4 / 3;
+  overflow:hidden;
+  background:var(--light-blue)
 }
 
-.board-card .mentor-card-content{
+.board-photo img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center
+}
+
+.board-card-content{
   padding:30px
+}
+
+.board-role{
+  margin-bottom:8px;
+  color:var(--dark-orange);
+  font-size:.72rem;
+  font-weight:800;
+  letter-spacing:.08em;
+  text-transform:uppercase
+}
+
+.board-card-content h2{
+  margin-bottom:7px;
+  color:var(--blue);
+  font-size:1.45rem
+}
+
+.board-school{
+  margin-bottom:17px;
+  font-weight:700
+}
+
+.board-card-content>p:not(.board-role):not(.board-school){
+  margin-bottom:20px;
+  color:var(--gray);
+  font-size:.91rem;
+  line-height:1.65
 }
 
 
@@ -392,7 +429,7 @@
   }
 
   .mentor-photo,
-  .board-card .mentor-photo{
+  .board-photo{
     aspect-ratio:1 / 1
   }
 }
