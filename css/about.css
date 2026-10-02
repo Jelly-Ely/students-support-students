@@ -507,6 +507,85 @@
 }
 
 
+/* ABOUT COMMUNITY */
+.about-audience{
+  background:var(--white)
+}
+
+.about-audience .section-heading{
+  max-width:760px;
+  margin-bottom:48px
+}
+
+.about-audience .section-heading h2{
+  color:var(--blue)
+}
+
+.about-audience-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px
+}
+
+.audience-card{
+  position:relative;
+  display:flex;
+  min-height:290px;
+  padding:32px;
+  flex-direction:column;
+  border:1px solid var(--border);
+  border-top:5px solid var(--blue);
+  border-radius:9px;
+  background:var(--cream);
+  box-shadow:var(--shadow-small);
+  transition:transform .2s ease,box-shadow .2s ease
+}
+
+.audience-card:nth-child(2){
+  border-top-color:var(--orange);
+  background:var(--light-orange)
+}
+
+.audience-card:nth-child(3){
+  background:var(--light-blue)
+}
+
+.audience-card:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow)
+}
+
+.audience-label{
+  margin-bottom:28px;
+  color:var(--dark-orange);
+  font-size:.72rem;
+  font-weight:900;
+  letter-spacing:.1em;
+  text-transform:uppercase
+}
+
+.audience-card h3{
+  margin-bottom:12px;
+  color:var(--blue);
+  font-size:1.45rem
+}
+
+.audience-card p{
+  margin-bottom:24px;
+  color:var(--gray);
+  line-height:1.65
+}
+
+.audience-card .text-link{
+  margin-top:auto;
+  color:var(--blue);
+  font-weight:900
+}
+
+.audience-card .text-link:hover{
+  color:var(--dark-orange)
+}
+
 /* CTA */
 .about-cta{
   position:relative;
@@ -607,7 +686,8 @@
 
 /* RESPONSIVE */
 @media(max-width:1000px){
-  .people-grid{
+  .people-grid,
+  .about-audience-grid{
     grid-template-columns:1fr 1fr
   }
 
@@ -635,7 +715,8 @@
     min-height:360px
   }
 
-  .people-grid{
+  .people-grid,
+  .about-audience-grid{
     grid-template-columns:1fr
   }
 }
