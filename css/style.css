@@ -149,14 +149,14 @@ p{color:var(--gray)}
 .button-primary,
 .nav-button{
   background:var(--orange);
-  color:var(--white);
+  color:var(--blue);
   box-shadow:0 8px 20px rgba(247,147,30,.2)
 }
 
 .button-primary:hover,
 .nav-button:hover{
   background:var(--dark-orange);
-  color:var(--white)
+  color:var(--blue)
 }
 
 .button-secondary{
